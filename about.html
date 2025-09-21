@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About — Eric Shepard</title>
-  <meta name="description" content="About Eric Shepard: A.A.S. CSD (Cincinnati State) completed; incoming University of Cincinnati B.S. Software Application Development; skills, education, focus areas, and contact." />
+  <meta name="description" content="About Eric Shepard: A.A.S. CSD (Cincinnati State) completed; incoming University of Cincinnati B.S. Software Application Development; skills, education, focus areas, current projects, and contact." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Eric Shepard — About" />
-  <meta property="og:description" content="Full-stack projects in C#, ASP.NET Core, Java, Python, Flutter, and SQL." />
+  <meta property="og:description" content="Full-stack projects in C#, ASP.NET Core, Java, Python/Flask, Flutter, and SQL. Current projects: Assetgineer and Texture Resizer." />
   <meta property="og:url" content="https://EmsCode82.github.io/about.html" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico">
@@ -36,6 +36,7 @@
       </a>
     </div>
   </header>
+
   <main id="main">
     <div class="container">
       <!-- Bio -->
@@ -43,7 +44,7 @@
         <h2>About Me</h2>
         <p class="lead">
           I’m a software developer with a completed <strong>A.A.S. in Computer Software Development (CSD)</strong> from Cincinnati State. 
-          I build clean, reliable applications across the stack using <strong>C#, ASP.NET Core, Java, Python, SQL Server/MySQL, and Flutter</strong>.
+          I build clean, reliable applications across the stack using <strong>C#, ASP.NET Core, Java, Python/Flask, SQL Server/MySQL, and Flutter</strong>.
         </p>
         <p>
           Beginning <strong>January 2026</strong>, I’ll continue at the <strong>University of Cincinnati</strong> in the 
@@ -54,6 +55,50 @@
           I’ve completed capstone and co-op projects including a <em>Looking for Group (LFG)</em> platform (Flutter + ASP.NET Core + SQL Server) and an 
           <em>enterprise review system</em> using ASP.NET Core Identity. I’m focused on scalable design, solid testing, and thoughtful UX.
         </p>
+      </section>
+
+      <!-- Current Projects -->
+      <section class="panel">
+        <h2>Current Projects (Functional, In Active Development)</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Assetgineer</h3>
+            <p class="lead">
+              A practical toolchain for preparing and managing creative assets. The goal is fast, repeatable workflows from raw images 
+              to production-ready outputs.
+            </p>
+            <p>
+              <strong>Status:</strong> Fully usable today; adding features and refining UX.  
+              <br><strong>Highlights:</strong> batch processing, consistent naming/output structure, hooks for external generators, and
+              integration points for downstream tools (e.g., texture pipelines).
+            </p>
+            <p class="tags">
+              <span class="tag">Python</span><span class="tag">Workflow</span><span class="tag">Automation</span>
+            </p>
+            <p>
+              <!-- If you later make this public, swap the span below for an <a> link -->
+              <span class="muted">Public repo/link: coming soon</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Texture Resizer</h3>
+            <p class="lead">
+              Flask image service + library that converts common formats to <em>game-ready, power-of-two textures</em> while preserving transparency.
+            </p>
+            <p>
+              <strong>Status:</strong> Fully functional; continuing to expand API and tests.  
+              <br><strong>Highlights:</strong> power-of-two targets (512–4096), modes <em>fit</em>/<em>crop</em>/<em>stretch</em>, 
+              PNG/WebP output, batch ZIP endpoint, health probe, and Docker support. Designed for Unity/Unreal pipelines.
+            </p>
+            <p class="tags">
+              <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span><span class="tag">Docker</span>
+            </p>
+            <p>
+              <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub Repo</a>
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- Education timeline -->
@@ -68,6 +113,17 @@
         </dl>
       </section>
 
+      <!-- Indepentdent Projects -->
+      <dt><strong>Independent Projects</strong> — Assetgineer & Texture Resizer (Ongoing, Public)</dt>
+        <dd>
+          Building and deploying production-grade tools beyond coursework:  
+          <ul>
+            <li><a href="https://assetgineer.com" target="_blank" rel="noopener">Assetgineer</a> — asset preparation pipeline integrating AI generation with post-processing and export.</li>
+            <li><a href="https://web-production-ec376.up.railway.app/" target="_blank" rel="noopener">Texture Resizer</a> — Flask image service for game-ready textures (power-of-two resize, fit/crop/stretch, Docker-ready).</li>
+          </ul>
+          These projects extend classroom learning into real-world deployments with cloud hosting, CI/CD, Docker, and API design.
+        </dd>
+
       <!-- Skills panel -->
       <section class="panel">
         <h2>Skills</h2>
@@ -77,7 +133,8 @@
             <p class="tags">
               <span class="tag">C#</span><span class="tag">ASP.NET Core</span>
               <span class="tag">Java</span><span class="tag">Spring (exposure)</span>
-              <span class="tag">Python</span><span class="tag">Dart/Flutter</span>
+              <span class="tag">Python</span><span class="tag">Flask</span>
+              <span class="tag">Dart/Flutter</span>
               <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
             </p>
           </div>
@@ -93,8 +150,8 @@
             <h3>Platforms &amp; Tools</h3>
             <p class="tags">
               <span class="tag">Git/GitHub</span><span class="tag">Postman</span>
-              <span class="tag">Docker (learning)</span><span class="tag">VS/VS Code</span>
-              <span class="tag">CI (GitHub Actions)</span>
+              <span class="tag">Docker</span><span class="tag">VS/VS Code</span>
+              <span class="tag">CI (GitHub Actions)</span><span class="tag">Linux/Nginx (basic)</span>
             </p>
           </div>
           <div class="card">
@@ -103,6 +160,25 @@
               <span class="tag">Full-Stack</span><span class="tag">REST APIs</span>
               <span class="tag">Auth &amp; Roles</span><span class="tag">Testing</span>
               <span class="tag">UX/HCI</span><span class="tag">Security Basics</span>
+            </p>
+          </div>
+          <div class="card">
+            <h3>Platforms &amp; Tools</h3>
+            <p class="tags">
+              <span class="tag">Git/GitHub</span><span class="tag">Postman</span>
+              <span class="tag">Docker</span><span class="tag">VS/VS Code</span>
+              <span class="tag">CI (GitHub Actions)</span><span class="tag">Linux/Nginx</span>
+              <span class="tag">Railway</span><span class="tag">Custom Domain Deployments</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Focus Areas</h3>
+            <p class="tags">
+              <span class="tag">Full-Stack</span><span class="tag">REST APIs</span>
+              <span class="tag">Auth &amp; Roles</span><span class="tag">Testing</span>
+              <span class="tag">UX/HCI</span><span class="tag">Security Basics</span>
+              <span class="tag">Asset Pipelines</span><span class="tag">Game-Ready Texture Prep</span>
             </p>
           </div>
         </div>
@@ -118,6 +194,7 @@
       </section>
     </div>
   </main>
+
   <footer>
     <p>© 2025 Eric Shepard</p>
   </footer>
