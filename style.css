@@ -31,6 +31,8 @@ a { color: var(--link); text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
+.muted { color: var(--muted); }
+
 .skip-link {
   position: absolute;
   left: -999px;
