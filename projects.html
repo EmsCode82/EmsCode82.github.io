@@ -7,21 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+  <header class="site-header">
+    <div class="brand">
+        <h1>Eric Shepard</h1>
+        <p>Software Developer • A.A.S. CSD (Cincinnati State) • Incoming UC B.S. Software Dev</p>
+    </div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
     </nav>
+    <div class="contact">
+        <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">
+        linkedin.com/in/eric-shepard-softwaredev
+        </a>
+        <span class="sep">•</span>
+        <a href="https://www.github.com/EmsCode82" target="_blank" rel="noopener">
+        github.com/EmsCode82
+        </a>
+    </div>
   </header>
   <main>
-    <h2>Featured Work</h2>
-    <ul>
-      <li><strong>LFG Platform</strong> — Flutter + ASP.NET Core + SQL Server, capstone project.</li>
-      <li><strong>PREDAQ Review System</strong> — ASP.NET Core Identity + SQL Server, co-op project.</li>
-      <li><strong>PRS System</strong> — Java + Spring Boot + MySQL, bootcamp capstone.</li>
-    </ul>
+    <div class="container">
+        <section class="panel">
+            <h2>Featured Work</h2>
+            <ul>
+            <li><strong>LFG Platform</strong> — Flutter + ASP.NET Core + SQL Server, capstone project.</li>
+            <li><strong>PREDAQ Review System</strong> — ASP.NET Core Identity + SQL Server, co-op project.</li>
+            <li><strong>PRS System</strong> — Java + Spring Boot + MySQL, bootcamp capstone.</li>
+            </ul>
+        </section>
+    </div>
   </main>
   <footer>
     <p>© 2025 Eric Shepard</p>
