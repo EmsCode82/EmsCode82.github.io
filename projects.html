@@ -1,44 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects - Eric Shepard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
-        <h1>Eric Shepard</h1>
-        <p>Software Developer • A.A.S. CSD (Cincinnati State) • Incoming UC B.S. Software Dev</p>
+      <h1>Eric Shepard</h1>
+      <p>Software Developer • A.A.S. CSD (Cincinnati State) • Incoming UC B.S. Software Dev</p>
     </div>
     <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
     </nav>
     <div class="contact">
-        <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">
         linkedin.com/in/eric-shepard-softwaredev
-        </a>
-        <span class="sep">•</span>
-        <a href="https://www.github.com/EmsCode82" target="_blank" rel="noopener">
+      </a>
+      <span class="sep">•</span>
+      <a href="https://www.github.com/EmsCode82" target="_blank" rel="noopener">
         github.com/EmsCode82
-        </a>
+      </a>
     </div>
   </header>
+
   <main>
     <div class="container">
-        <section class="panel">
-            <h2>Featured Work</h2>
-            <ul>
-            <li><strong>LFG Platform</strong> — Flutter + ASP.NET Core + SQL Server, capstone project.</li>
-            <li><strong>PREDAQ Review System</strong> — ASP.NET Core Identity + SQL Server, co-op project.</li>
-            <li><strong>PRS System</strong> — Java + Spring Boot + MySQL, bootcamp capstone.</li>
-            </ul>
-        </section>
+      <section class="panel">
+        <h2>Featured Projects</h2>
+
+        <div class="grid">
+          <!-- 1. Portfolio -->
+          <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive static site for my work and contact, built with semantic HTML & CSS and deployed on GitHub Pages.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span>
+            </div>
+            <p>
+              <a href="https://github.com/EmsCode82/EmsCode82.github.io" target="_blank" rel="noopener">Code</a> ·
+              <a href="https://EmsCode82.github.io" target="_blank" rel="noopener">Live</a>
+            </p>
+          </article>
+
+          <!-- 2. To-Do CRUD -->
+          <article class="card">
+            <h3>To-Do CRUD API</h3>
+            <p>REST API + simple UI to create, read, update, delete tasks with DB migrations and unit tests.</p>
+            <div class="tags">
+              <span class="tag">ASP.NET Core</span><span class="tag">SQL</span><span class="tag">REST</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 3. Blog w/ Auth -->
+          <article class="card">
+            <h3>Blog + Auth & Roles</h3>
+            <p>Blog platform with Identity, role-based admin, validation, and secure password storage.</p>
+            <div class="tags">
+              <span class="tag">ASP.NET Identity</span><span class="tag">EF Core</span><span class="tag">JWT</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 4. Interactive Web/Game -->
+          <article class="card">
+            <h3>Interactive Web/Game</h3>
+            <p>Canvas-based game (or Flutter Web dashboard) emphasizing input, animation, and state.</p>
+            <div class="tags">
+              <span class="tag">Canvas</span><span class="tag">JS</span><span class="tag">Flutter Web</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 5. Mobile App -->
+          <article class="card">
+            <h3>Study Tracker (Mobile)</h3>
+            <p>Flutter app with local storage and optional API sync, designed for offline-first usage.</p>
+            <div class="tags">
+              <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">SQLite/Hive</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 6. Full-Stack Production -->
+          <article class="card">
+            <h3>Mini LFG 2.0</h3>
+            <p>Full-stack app with roles, events, comments, tokens, logging, health checks, and CI.</p>
+            <div class="tags">
+              <span class="tag">ASP.NET Core</span><span class="tag">Postgres</span><span class="tag">Docker</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 7. Sys/Net/Sec Mini -->
+          <article class="card">
+            <h3>Secure Server Setup</h3>
+            <p>Ubuntu VM with Nginx reverse proxy, HTTPS via Let’s Encrypt, firewall, and hardening.</p>
+            <div class="tags">
+              <span class="tag">Ubuntu</span><span class="tag">Nginx</span><span class="tag">TLS</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Docs (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Demo (TBD)</a>
+            </p>
+          </article>
+
+          <!-- 8. Capstone-Style -->
+          <article class="card">
+            <h3>Capstone: Farm Market Manager</h3>
+            <p>Inventory + simple POS + reports with full SDLC docs, tests, CI/CD, and a demo video.</p>
+            <div class="tags">
+              <span class="tag">Full-Stack</span><span class="tag">Testing</span><span class="tag">CI/CD</span>
+            </div>
+            <p>
+              <a href="#" target="_blank" rel="noopener">Code (TBD)</a> ·
+              <a href="#" target="_blank" rel="noopener">Live (TBD)</a>
+            </p>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
+
   <footer>
     <p>© 2025 Eric Shepard</p>
   </footer>
