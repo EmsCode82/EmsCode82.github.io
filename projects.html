@@ -146,19 +146,33 @@
             </p>
           </article>
 
-          <!-- 9. Texture Resizer -->
+          <!-- 9a. Assetgineer Texture Service (Standalone) -->
           <article class="card">
-            <h3>Texture Resizer</h3>
-            <p>Flask service that converts images into game-ready textures with power-of-two resizing (512–4096), aspect ratio modes (fit, crop, stretch), and alpha-preserving PNG/WebP output for Unreal/Unity workflows.</p>
-            <div class="tags">
-              <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span>
-            </div>
-            <p>
-              <p>Github</p>
-              <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub Repo</a>
-              <p>Texture Resizer</p>
-              <a href="https://web-production-ec376.up.railway.app/" target="_blank" rel="noopener">Texture Resizer</a>
-            </p>
+          <h3>Assetgineer Texture Service</h3>
+          <p>Flask service that converts arbitrary images into game‑ready textures with power‑of‑two resizing (512–4096+), aspect‑ratio modes (fit, crop, stretch), and alpha‑preserving PNG output. Designed for Unreal/Unity workflows; ships a one‑click ZIP of all generated sizes.</p>
+          <div class="tags">
+          <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span><span class="tag">Railway</span>
+          </div>
+          <p>
+          <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">Code</a>
+          <span class="sep">•</span>
+          <a href="https://web-production-ec376.up.railway.app/" target="_blank" rel="noopener">Live Demo</a>
+          </p>
+          </article>
+
+
+          <!-- 9b. Assetgineer (Base44 Integration) -->
+          <article class="card">
+          <h3>Assetgineer (Base44 Integration)</h3>
+          <p>A Base44 app that calls the Texture Service behind a clean UI: upload → validate → generate a ZIP of consistent sizes for engines/marketplaces. Includes staging controls and prompt‑driven flows so it can slot into broader asset pipelines.</p>
+          <div class="tags">
+          <span class="tag">Base44</span><span class="tag">Flask API</span><span class="tag">Railway</span><span class="tag">HTML</span>
+          </div>
+          <p>
+          <span class="muted">Live (Base44 URL TBD)</span>
+          <span class="sep">•</span>
+          <span class="muted">Docs (TBD)</span>
+          </p>
           </article>
         </div>
       </section>
