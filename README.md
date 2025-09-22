@@ -20,7 +20,7 @@ Built with **semantic HTML**, **modern CSS**, and deployed on **GitHub Pages**.
 ---
 
 ## 🖼 Preview
-Screenshotd of navigation pages:
+Screenshots of navigation pages:
 
 ![Portfolio Screenshot](screenshot.png)
 ![Projects Screenshot](screenshot1.png)
