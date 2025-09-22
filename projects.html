@@ -39,11 +39,26 @@
   <main id="main">
     <div class="container">
       <section class="panel">
+        <h2>Portfolio Roadmap</h2>
+        <ul>
+          <li>🎯 <strong>To-Do CRUD API</strong>: add unit tests, error middleware, CI badge</li>
+          <li>🛡️ <strong>Blog + Auth</strong>: harden Identity (password policy, 2FA option), basic audit log</li>
+          <li>📱 <strong>Study Tracker</strong>: offline-first polish, optional sync to CRUD API</li>
+          <li>🧪 <strong>Capstone Farm Market</strong>: integration tests + reports demo</li>
+          <li>🐳 <strong>Mini LFG 2.0</strong>: Docker compose (API/DB/UI), GH Actions deploy</li>
+          <li>🔐 <strong>Secure Server</strong>: DB backup/restore scripts, fail2ban, logrotate</li>
+          <li>🧱 <strong>Database Dev</strong>: inventory schema (ERD, procs, indexes)</li>
+          <li>🔄 <strong>ETL Mini</strong>: CSV → staging → warehouse; scheduled run</li>
+          <li>📊 <strong>BI/Analytics</strong>: small dashboard (KPIs) from capstone data</li>
+          <li>📚 <strong>Tech Writing</strong>: API docs site for Texture Service (x-api-key examples)</li>
+        </ul>
+      </section>
+      <section class="panel">
         <h2>Featured Projects</h2>
 
         <div class="grid">
           <!-- 1. Portfolio -->
-          <article class="card">
+          <article class="card" id="portfolio">
             <h3>Portfolio Website</h3>
             <p>
               Responsive, accessible static site built with semantic HTML5 and CSS.  
@@ -62,7 +77,7 @@
           </article>
 
           <!-- 2. To-Do CRUD -->
-          <article class="card">
+          <article class="card" id="todo-crud">
             <h3>To-Do CRUD API</h3>
             <p>REST API + simple UI to create, read, update, delete tasks with DB migrations and unit tests.</p>
             <div class="tags">
@@ -75,7 +90,7 @@
           </article>
 
           <!-- 3. Blog w/ Auth -->
-          <article class="card">
+          <article class="card" id="blog-auth">
             <h3>Blog + Auth & Roles</h3>
             <p>Blog platform with Identity, role-based admin, validation, and secure password storage.</p>
             <div class="tags">
@@ -88,7 +103,7 @@
           </article>
 
           <!-- 4. Interactive Web/Game -->
-          <article class="card">
+          <article class="card" id="interactive-game">
             <h3>Interactive Web/Game</h3>
             <p>Canvas-based game (or Flutter Web dashboard) emphasizing input, animation, and state.</p>
             <div class="tags">
@@ -101,7 +116,7 @@
           </article>
 
           <!-- 5. Mobile App -->
-          <article class="card">
+          <article class="card" id="study-tracker">
             <h3>Study Tracker (Mobile)</h3>
             <p>Flutter app with local storage and optional API sync, designed for offline-first usage.</p>
             <div class="tags">
@@ -114,7 +129,7 @@
           </article>
 
           <!-- 6. Full-Stack Production -->
-          <article class="card">
+          <article class="card" id="mini-lfg">
             <h3>Mini LFG 2.0</h3>
             <p>Full-stack app with roles, events, comments, tokens, logging, health checks, and CI.</p>
             <div class="tags">
@@ -127,7 +142,7 @@
           </article>
 
           <!-- 7. Sys/Net/Sec Mini -->
-          <article class="card">
+          <article class="card" id="secure-server">
             <h3>Secure Server Setup</h3>
             <p>Ubuntu VM with Nginx reverse proxy, HTTPS via Let’s Encrypt, firewall, and hardening.</p>
             <div class="tags">
@@ -140,7 +155,7 @@
           </article>
 
           <!-- 8. Capstone-Style -->
-          <article class="card">
+          <article class="card" id="capstone-farm">
             <h3>Capstone: Farm Market Manager</h3>
             <p>Inventory + simple POS + reports with full SDLC docs, tests, CI/CD, and a demo video.</p>
             <div class="tags">
@@ -153,7 +168,7 @@
           </article>
 
           <!-- Assetgineer Texture Service -->
-          <article class="card">
+          <article class="card" id="texture-service">
             <h3>Assetgineer Texture Service</h3>
             <p>
               Flask service that converts arbitrary images into game-ready textures with 
@@ -182,7 +197,7 @@
 
 
           <!-- Assetgineer (AI Art Generator) -->
-          <article class="card">
+          <article class="card" id="assetgineer">
             <h3>Assetgineer (AI Art Generator)</h3>
             <p>
               AI-powered web app for generating game art (characters, items, environments, VFX) 
@@ -210,6 +225,263 @@
           </article>
         </div>
       </section>
+
+      <!--======================================================================================================================================================================-->
+      <!--======================================================================================================================================================================-->
+
+      <!-- ===== Career Pathways & Demonstration Projects ===== -->
+      <section class="panel">
+        <h2>Career Pathways &amp; Demonstration Projects</h2>
+        <p class="muted">Each role links to a concrete project (or small add-on) that demonstrates the core skills employers expect.</p>
+
+        <!-- 🖥️ Software & Application Development -->
+        <h3>Software &amp; Application Development</h3>
+        <div class="grid">
+
+          <article class="card">
+            <h3>Junior Software Developer</h3>
+            <p><strong>Demo:</strong> <a href="#todo-crud">To-Do CRUD API</a>; <a href="#blog-auth">Blog + Auth &amp; Roles</a></p>
+            <ul>
+              <li>CRUD, controllers/services, EF Core, migrations, DTOs</li>
+              <li>Unit tests, error handling, GitHub Actions CI</li>
+            </ul>
+            <p class="tags"><span class="tag">C#</span><span class="tag">ASP.NET Core</span><span class="tag">SQL</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Web Developer (Front-End / Full-Stack)</h3>
+            <p><strong>Demo:</strong> <a href="#portfolio">Portfolio Website</a>; <a href="#mini-lfg">Mini LFG 2.0</a></p>
+            <ul>
+              <li>Semantic HTML, responsive layout, form validation</li>
+              <li>API integration, auth, routing, deployment</li>
+            </ul>
+            <p class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">ASP.NET</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Application Support Developer</h3>
+            <p><strong>Demo:</strong> <a href="#blog-auth">Blog + Auth &amp; Roles</a> (add logs &amp; admin tools)</p>
+            <ul>
+              <li>Issue repro, log triage, small bugfix PRs</li>
+              <li>Admin dashboards, role/permission tweaks</li>
+            </ul>
+            <p class="tags"><span class="tag">Logs</span><span class="tag">Identity</span><span class="tag">Troubleshooting</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Mobile Developer (Junior)</h3>
+            <p><strong>Demo:</strong> <a href="#study-tracker">Study Tracker (Mobile)</a></p>
+            <ul>
+              <li>Local storage (SQLite/Hive), offline-first</li>
+              <li>Optional sync to To-Do CRUD API</li>
+            </ul>
+            <p class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span></p>
+          </article>
+
+          <article class="card">
+            <h3>QA Engineer / Test Automation</h3>
+            <p><strong>Demo:</strong> <a href="#capstone-farm">Capstone: Farm Market Manager</a> (add test suite)</p>
+            <ul>
+              <li>Unit &amp; integration tests, API contract tests</li>
+              <li>GitHub Actions test matrix + coverage badge</li>
+            </ul>
+            <p class="tags"><span class="tag">NUnit/xUnit</span><span class="tag">CI</span></p>
+          </article>
+        </div>
+
+        <!-- 🗄️ Database & Data-Focused -->
+        <h3>Database &amp; Data-Focused</h3>
+        <div class="grid">
+
+          <article class="card">
+            <h3>Database Developer</h3>
+            <p><strong>Demo:</strong> Extend <a href="#todo-crud">To-Do CRUD</a> or <a href="#capstone-farm">Capstone</a> with inventory schema</p>
+            <ul>
+              <li>Normalization, constraints, views, stored procs</li>
+              <li>Complex reporting queries, indexing basics</li>
+            </ul>
+            <p class="tags"><span class="tag">SQL</span><span class="tag">ERD</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Junior DBA</h3>
+            <p><strong>Demo:</strong> <a href="#secure-server">Secure Server Setup</a> (add DB backups &amp; monitoring)</p>
+            <ul>
+              <li>Backup/restore scripts, role-based access</li>
+              <li>Index tuning, slow query analysis</li>
+            </ul>
+            <p class="tags"><span class="tag">DBA</span><span class="tag">Security</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Data Analyst</h3>
+            <p><strong>Demo:</strong> Farm Market dataset → dashboard</p>
+            <ul>
+              <li>SQL extraction + CSV cleanup (Pandas optional)</li>
+              <li>KPIs: sales, inventory turns, margins</li>
+            </ul>
+            <p class="tags"><span class="tag">SQL</span><span class="tag">Dashboard</span></p>
+          </article>
+
+          <article class="card">
+            <h3>ETL Developer</h3>
+            <p><strong>Demo:</strong> CSV → staging → warehouse mini-pipeline</p>
+            <ul>
+              <li>Python loader, idempotent upserts, audits</li>
+              <li>Scheduled run (cron/GitHub Actions)</li>
+            </ul>
+            <p class="tags"><span class="tag">ETL</span><span class="tag">Python</span></p>
+          </article>
+
+          <article class="card">
+            <h3>BI Technician</h3>
+            <p><strong>Demo:</strong> <a href="#capstone-farm">Capstone</a> reports + role-based dashboards</p>
+            <ul>
+              <li>Star schema lite, semantic layer notes</li>
+              <li>Drill-through &amp; exports</li>
+            </ul>
+            <p class="tags"><span class="tag">BI</span><span class="tag">Reporting</span></p>
+          </article>
+        </div>
+
+        <!-- 🔧 Systems & IT -->
+        <h3>Systems &amp; IT (with Coding/DB Edge)</h3>
+        <div class="grid">
+
+          <article class="card">
+            <h3>IT Support Specialist</h3>
+            <p><strong>Demo:</strong> <a href="#secure-server">Secure Server Setup</a> (Nginx + TLS + hardening)</p>
+            <ul>
+              <li>Troubleshooting runbook, common fixes</li>
+              <li>Bash/PowerShell helpers, service checks</li>
+            </ul>
+            <p class="tags"><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">TLS</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Systems Analyst</h3>
+            <p><strong>Demo:</strong> <a href="#capstone-farm">Capstone</a> docs (Requirements → ERD → UML)</p>
+            <ul>
+              <li>Use cases, acceptance criteria, traceability</li>
+              <li>Change logs &amp; release notes</li>
+            </ul>
+            <p class="tags"><span class="tag">SAD</span><span class="tag">Docs</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Application Support Analyst</h3>
+            <p><strong>Demo:</strong> <a href="#todo-crud">To-Do</a>/<a href="#blog-auth">Blog</a>: incident tickets + fixes</p>
+            <ul>
+              <li>SQL diagnostics, log correlation, repro steps</li>
+              <li>SLA communication &amp; postmortems</li>
+            </ul>
+            <p class="tags"><span class="tag">SQL</span><span class="tag">Logs</span></p>
+          </article>
+
+          <article class="card">
+            <h3>DevOps Technician (Entry)</h3>
+            <p><strong>Demo:</strong> <a href="#mini-lfg">Mini LFG 2.0</a> (Docker + CI/CD)</p>
+            <ul>
+              <li>Build/test pipelines, containerized deploy</li>
+              <li>Health checks, env secrets, rollbacks</li>
+            </ul>
+            <p class="tags"><span class="tag">Docker</span><span class="tag">CI/CD</span></p>
+          </article>
+        </div>
+
+        <!-- 📊 Business + Tech Hybrid -->
+        <h3>Business + Tech Hybrid</h3>
+        <div class="grid">
+
+          <article class="card">
+            <h3>Technical Analyst</h3>
+            <p><strong>Demo:</strong> Case study: <a href="#todo-crud">To-Do CRUD</a> improving workflow</p>
+            <ul>
+              <li>Process mapping, small automation wins</li>
+              <li>Before/after metrics &amp; insights</li>
+            </ul>
+            <p class="tags"><span class="tag">Analysis</span><span class="tag">SQL</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Junior Business Analyst</h3>
+            <p><strong>Demo:</strong> <a href="#capstone-farm">Capstone</a> backlog → release plan</p>
+            <ul>
+              <li>User stories, priority, roadmap</li>
+              <li>Feedback → iteration cycles</li>
+            </ul>
+            <p class="tags"><span class="tag">BA</span><span class="tag">Roadmapping</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Technical Writer / Documentation</h3>
+            <p><strong>Demo:</strong> <a href="#texture-service">Assetgineer Texture Service</a> docs site</p>
+            <ul>
+              <li>API reference, auth (<code>x-api-key</code>) examples</li>
+              <li>Runbook: local dev, Docker, deploy</li>
+            </ul>
+            <p class="tags"><span class="tag">Docs</span><span class="tag">API</span></p>
+          </article>
+        </div>
+
+        <!-- 🚀 Growth / Transitional -->
+        <h3>Growth &amp; Transitional (1–3 Years)</h3>
+        <div class="grid">
+
+          <article class="card">
+            <h3>Full-Stack Developer</h3>
+            <p><strong>Demo:</strong> <a href="#mini-lfg">Mini LFG 2.0</a> (prod-like)</p>
+            <ul>
+              <li>Auth, roles, logging, health checks</li>
+              <li>Dockerized API + DB + UI; CI/CD</li>
+            </ul>
+            <p class="tags"><span class="tag">ASP.NET</span><span class="tag">SQL</span><span class="tag">Docker</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Data Engineer (Entry)</h3>
+            <p><strong>Demo:</strong> ETL pipeline → small warehouse</p>
+            <ul>
+              <li>Incremental loads, schema evolution</li>
+              <li>Job orchestration (cron/GitHub Actions)</li>
+            </ul>
+            <p class="tags"><span class="tag">ETL</span><span class="tag">Pipelines</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Cloud Developer / Cloud Support</h3>
+            <p><strong>Demo:</strong> Deploy <a href="#texture-service">Texture Service</a> to cloud with IaC</p>
+            <ul>
+              <li>Reverse proxy, TLS, logging/metrics</li>
+              <li>Infrastructure as Code</li>
+            </ul>
+            <p class="tags"><span class="tag">Cloud</span><span class="tag">IaC</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Cybersecurity Analyst</h3>
+            <p><strong>Demo:</strong> Harden <a href="#blog-auth">Blog + Auth</a></p>
+            <ul>
+              <li>ASP.NET Identity, JWT, password hashing</li>
+              <li>OWASP checks, secrets handling</li>
+            </ul>
+            <p class="tags"><span class="tag">Security</span><span class="tag">OWASP</span></p>
+          </article>
+        </div>
+
+        <p class="muted">
+          Quick links:
+          <a href="https://emscode82.github.io" target="_blank" rel="noopener">Portfolio</a> •
+          <a href="https://assetgineer.com" target="_blank" rel="noopener">Assetgineer</a> •
+          <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Texture Service (Live)</a>
+        </p>
+      </section>
+
+
+
+      <!--======================================================================================================================================================================-->
+      <!--======================================================================================================================================================================-->
+
       <!-- ===== Career Pathways & Demonstration Projects ===== -->
       <section class="panel">
         <h2>Career Pathways & Demonstration Projects</h2>
