@@ -148,37 +148,51 @@
 
           <!-- 9a. Assetgineer Texture Service (Standalone) -->
           <article class="card">
-          <h3>Assetgineer Texture Service</h3>
-          <p>Flask service that converts arbitrary images into game‑ready textures with power‑of‑two resizing (512–4096+), aspect‑ratio modes (fit, crop, stretch), and alpha‑preserving PNG output. Designed for Unreal/Unity workflows; ships a one‑click ZIP of all generated sizes.</p>
-          <div class="tags">
-          <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span><span class="tag">Railway</span>
-          </div>
-          <p>
-          <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub Code</a>
-          <span class="sep">•</span>
-          <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Live Railway Deployment</a>
-          </p>
+            <h3>Assetgineer Texture Service</h3>
+            <p>
+              Flask service that converts arbitrary images into game-ready textures with power-of-two resizing (512–4096+),
+              aspect-ratio modes (fit, crop, stretch), and alpha-preserving PNG/WebP. Designed for Unity/Unreal; can output a
+              one-click ZIP pack (multiple sizes, optional PBR).
+            </p>
+            <ul class="muted" style="margin:0 0 .5rem 1rem; line-height:1.4;">
+              <li><strong>Current state:</strong> Live and functional; write endpoints are protected.</li>
+              <li><strong>Access:</strong> Requires <code>x-api-key</code>. Public landing page is viewable; processing is restricted.</li>
+              <li><strong>Demo:</strong> I’ll provide an API key upon request for employer evaluation.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span>
+              <span class="tag">Docker</span><span class="tag">Railway</span>
+            </div>
+            <p>
+              <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub Code</a>
+              <span class="sep">•</span>
+              <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Live Deployment</a>
+            </p>
           </article>
 
-
           <!-- 9b. Assetgineer (Base44 Integration) -->
-        <article class="card">
-          <h3>Assetgineer (AI Art Generator)</h3>
-          <p>
-            Assetgineer is an AI-powered web application for game developers and artists, built on the Base44 platform.
-            It provides an intuitive interface to generate game-ready art assets—characters, items, environments, VFX—
-            with granular controls and image-to-image. Designed to integrate with pipeline services like the Texture Service.
-          </p>
-          <div class="tags">
-            <span class="tag">Base44</span><span class="tag">Generative AI</span>
-            <span class="tag">Game Art</span><span class="tag">React</span><span class="tag">Tailwind CSS</span>
-          </div>
-          <p>
-            <a href="https://www.assetgineer.com" target="_blank" rel="noopener">Assetgineer</a>            
-            <span class="sep">•</span>
-            <span class="muted">Docs (TBD)</span>
-          </p>
-        </article>
+          <article class="card">
+            <h3>Assetgineer (AI Art Generator)</h3>
+            <p>
+              AI-powered web app for generating game art (characters, items, environments, VFX) with prompt controls and img-to-img.
+              Integrates with the Texture Service to package results into power-of-two, engine-ready assets.
+            </p>
+            <ul class="muted" style="margin:0 0 .5rem 1rem; line-height:1.4;">
+              <li><strong>Current state:</strong> Public UI is live and usable.</li>
+              <li><strong>Backend integration:</strong> Pack generation calls <code>/generate_pack</code> and other write endpoints via
+                <code>x-api-key</code>; unauthorized requests are blocked.</li>
+              <li><strong>Demo keys:</strong> Available on request for reviewers/employers.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Base44</span><span class="tag">Generative AI</span>
+              <span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Integration</span>
+            </div>
+            <p>
+              <a href="https://www.assetgineer.com" target="_blank" rel="noopener">Assetgineer</a>
+              <span class="sep">•</span>
+              <span class="muted">Docs (TBD)</span>
+            </p>
+          </article>
         </div>
       </section>
     </div>
