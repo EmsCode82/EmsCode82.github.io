@@ -65,24 +65,15 @@ a:hover { text-decoration: underline; }
   font-size: clamp(12px, 1.6vw, 14px);
 }
 
-.nav {
-  margin: 12px 0;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  display: inline-block;
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: #131820;
-}
-
 .nav a.active {
   font-weight: 700;
-  border-bottom: 2px solid #4a5568;
+  border: 2px solid #4a5568; /* make the whole pill stand out */
+  background: #1a202c;        /* slightly darker background to indicate "on" */
+}
+
+.nav a.active:focus,
+.nav a.active:hover {
+  text-decoration: none;
 }
 
 .contact {
