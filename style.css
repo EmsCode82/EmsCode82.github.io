@@ -80,6 +80,11 @@ a:hover { text-decoration: underline; }
   background: #131820;
 }
 
+.nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #4a5568;
+}
+
 .contact {
   font-size: clamp(12px, 1.6vw, 14px);
   color: var(--muted);
