@@ -20,10 +20,11 @@ Built with **semantic HTML**, **modern CSS**, and deployed on **GitHub Pages**.
 ---
 
 ## 🖼 Preview
-Add a screenshot of your homepage (name it `screenshot.png` in the repo root):
+Screenshotd of navigation pages:
 
 ![Portfolio Screenshot](screenshot.png)
-
+![Projects Screenshot](screenshot1.png)
+![About Screenshot](screenshot2.png)
 ---
 
 ## 🛠 Tech Stack
