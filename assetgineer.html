@@ -35,19 +35,92 @@
     <div class="container">
       <section class="panel">
         <h2>Assetgineer <span class="badge badge-progress">In Progress</span></h2>
+
         <p class="lead">
-          AI-powered art generator and asset manager for game developers. Turns high-level concepts into consistent visual assets, then organizes them with versions, tags, and collections.
+          <strong>Assetgineer</strong> is an AI-powered web application that helps game developers
+          conceptualize, create, and manage digital art assets. It transforms high-level game concepts into
+          production-ready visuals and streamlines the entire workflow from ideation to implementation.
         </p>
 
-        <h3>Highlights</h3>
+        <!-- On-page nav -->
+        <nav class="toc" aria-label="On this page">
+          <strong>Contents:</strong>
+          <a href="#overview">Overview</a> ·
+          <a href="#prompt-engine">Prompt Generation Engine</a> ·
+          <a href="#management">Asset Management</a> ·
+          <a href="#screens">Screenshots</a>
+        </nav>
+
+        <h3 id="overview">Overview</h3>
+        <p>
+          Moving beyond traditional pipelines, Assetgineer leverages modern AI to turn game ideas into
+          consistent, production-ready assets. It supports characters, locations, items, weapons, enemies,
+          VFX, and UI elements—providing a cohesive path from creative intent to usable art while preserving
+          consistency of style and lore across a project.
+        </p>
+
+        <h3 id="prompt-engine">Intelligent Prompt Generation Engine</h3>
+        <p>
+          At the core is a prompt generator that translates user parameters into highly detailed,
+          model-friendly prompts so image models produce the look you want reliably.
+        </p>
         <ul>
-          <li>Prompt engine understands races/biomes/architecture/styles; supports negative prompts and one-click randomize.</li>
-          <li>Image-to-image and in-painting for precise edits.</li>
-          <li><em>Prompt Analysis</em> tree explains how prompts are built for transparent iteration.</li>
-          <li>Versioned library with tags/collections, bulk actions, and “load back into generator” for rapid iteration.</li>
+          <li>
+            <strong>Contextual &amp; Cohesive Design.</strong> Deep game-dev context:
+            racial characteristics for nuanced fantasy characters; biome and architectural styles for locations;
+            elemental infusions for items and weapons—so assets feel like they belong to the same world.
+          </li>
+          <li>
+            <strong>Adaptive Styling.</strong> From pixel art to photorealism, select an aesthetic and Assetgineer
+            adapts positive/negative keywords to match it, avoiding common generation pitfalls while maintaining consistency.
+          </li>
+          <li>
+            <strong>Robust Customization &amp; Modularity.</strong> Fine-tune physical attributes (hair, eyes, skin, beard),
+            clothing by slot/material/color, staging (framing, camera, lighting, background), and pose (with directional pose
+            detection and automatic camera adjustment).
+          </li>
+          <li>
+            <strong>Randomize All &amp; Section-Specific Randomization.</strong> Unblock creativity and iterate fast by
+            randomizing an entire concept—or just a section like outfits—with curated, context-aware suggestions.
+          </li>
+          <li>
+            <strong>Image-to-Image &amp; In-painting.</strong> Start from an existing image, enhance it, or use masked
+            in-painting to surgically change details using targeted prompts.
+          </li>
+          <li>
+            <strong>Transparent AI Logic (<em>Prompt Analysis</em>).</strong> A tree view shows how the final prompt is constructed
+            step-by-step, helping users learn, refine, and trust the generation process.
+          </li>
         </ul>
 
-        <h3>Screenshots</h3>
+        <h3 id="management">Comprehensive Asset Management</h3>
+        <p>
+          Assetgineer includes a full management layer so teams can keep growing libraries organized and ready for production.
+        </p>
+        <ul>
+          <li>
+            <strong>Dynamic Asset Library.</strong> Browse, filter, and sort by type, tags, and custom collections.
+          </li>
+          <li>
+            <strong>Collection Manager.</strong> Group related assets into scalable collections for projects or features.
+          </li>
+          <li>
+            <strong>Version Control &amp; History.</strong> Track the evolution of each asset, generate variations,
+            compare changes, or revert to earlier iterations.
+          </li>
+          <li>
+            <strong>Bulk Operations.</strong> Efficiently modify large sets—bulk delete, tag, or assign to collections.
+          </li>
+          <li>
+            <strong>Detailed Asset View.</strong> See the image, original prompt, input parameters, and version history together.
+          </li>
+          <li>
+            <strong>Seamless Integration.</strong> Load any asset back into the generator for further editing—closing the loop
+            between creation and iteration.
+          </li>
+        </ul>
+
+        <h3 id="screens">Screenshots</h3>
         <div class="shot">
           <a href="https://assetgineer.com" target="_blank" rel="noopener">
             <img src="img/assetgineer1.png" alt="Assetgineer dashboard overview" loading="lazy" decoding="async" width="960" height="540">
@@ -55,12 +128,12 @@
         </div>
         <div class="shot">
           <a href="https://assetgineer.com" target="_blank" rel="noopener">
-            <img src="img/assetgineer2.png" alt="Batch operations and collections" loading="lazy" decoding="async" width="960" height="540">
+            <img src="img/assetgineer2.png" alt="Collections and batch operations" loading="lazy" decoding="async" width="960" height="540">
           </a>
         </div>
         <div class="shot">
           <a href="https://assetgineer.com" target="_blank" rel="noopener">
-            <img src="img/assetgineer3.png" alt="Asset detail and prompt parameters" loading="lazy" decoding="async" width="960" height="540">
+            <img src="img/assetgineer3.png" alt="Asset detail with parameters and history" loading="lazy" decoding="async" width="960" height="540">
           </a>
         </div>
 
