@@ -13,8 +13,8 @@ Built with **semantic HTML**, **modern CSS**, and deployed on **GitHub Pages**.
 - Clean CSS with Flexbox/Grid
 - Skip-link navigation for screen readers
 - Project cards featuring:
-  - Assetgineer — AI art generator: https://assetgineer.com
-  - Texture Service — Flask texture pipeline: https://web-production-ec376.up.railway.app
+  - Assetgineer — asset preparation pipeline: https://assetgineer.com
+  - Texture Resizer Service — Flask texture pipeline: https://web-production-ec376.up.railway.app
   - Additional full-stack, mobile, and enterprise projects
 
 ---
