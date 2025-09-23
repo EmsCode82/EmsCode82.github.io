@@ -169,3 +169,12 @@ footer {
   text-align: center;
   padding: 16px;
 }
+
+.badge{display:inline-block;padding:.2rem .5rem;border-radius:9999px;font-size:.75rem}
+.badge-live{background:#1f9d55;color:#fff}
+.badge-progress{background:#3b82f6;color:#fff}
+.badge-tbd{background:#6b7280;color:#fff}
+
+.filter{margin:12px 0}
+.filter input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0f131a;color:var(--text)}
+

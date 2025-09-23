@@ -57,7 +57,10 @@
       </section>
       <section class="panel">
         <h2>Featured Projects</h2>
-
+        <div class="filter">
+          <label for="filter" class="muted">Filter by title or tag</label>
+          <input id="filter" type="text" placeholder="e.g., ASP.NET, SQL, Flutter" aria-describedby="filter">
+        </div>
         <div class="grid">
           <!-- 1. Portfolio -->
           <article class="card" id="portfolio">
@@ -81,6 +84,7 @@
           <!-- 2. To-Do CRUD -->
           <article class="card" id="todo-crud">
             <h3>To-Do CRUD API</h3>
+            <span class="badge badge-progress">In Progress</span>
             <p>REST API + simple UI to create, read, update, delete tasks with DB migrations and unit tests.</p>
             <div class="tags">
               <span class="tag">ASP.NET Core</span><span class="tag">SQL</span><span class="tag">REST</span>
@@ -493,9 +497,24 @@
 
     </div>
   </main>
-
   <footer>
+    <p>Open to Software Developer roles — <a href="mailto:eric317s@gmail.com">eric317s@gmail.com</a> · <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/EmsCode82" target="_blank" rel="noopener">GitHub</a></p>
     <p>© 2025 Eric Shepard</p>
   </footer>
+  <script>
+    const input = document.getElementById('filter');
+    const cards = Array.from(document.querySelectorAll('.grid .card'));
+    const norm = s => (s || '').toLowerCase().trim();
+    input?.addEventListener('input', e => {
+      const q = norm(e.target.value);
+      cards.forEach(c => {
+        const hay = norm(
+          c.querySelector('h3')?.textContent + ' ' +
+          c.querySelector('.tags')?.textContent
+        );
+        c.style.display = hay.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
