@@ -11,8 +11,24 @@
   <meta property="og:url" content="https://EmsCode82.github.io/about.html" />
   <meta property="og:image" content="https://emscode82.github.io/screenshot.png">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://emscode82.github.io/index.html">   <!-- use projects.html/about.html on those pages -->
+  <meta name="theme-color" content="#0f1216">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico">
+  <!-- Structured data (Person + Site) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eric Shepard",
+    "jobTitle": "Software Developer",
+    "url": "https://emscode82.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/eric-shepard-softwaredev",
+      "https://github.com/EmsCode82"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -27,6 +43,7 @@
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="about.html" class="active" aria-current="page">About</a>
+      <a class="btn" href="about.html#contact">Contact</a>
     </nav>
     <div class="contact">
       <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">
@@ -42,7 +59,7 @@
   <main id="main">
     <div class="container">
       <!-- Bio -->
-      <section class="panel">
+      <section class="panel" id="contact">
         <h2>About Me</h2>
         <p class="lead">
           I’m a software developer with a completed <strong>A.A.S. in Computer Software Development (CSD)</strong> from Cincinnati State. 

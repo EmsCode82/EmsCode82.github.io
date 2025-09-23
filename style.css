@@ -69,6 +69,23 @@ a:hover { text-decoration: underline; }
   font-size: clamp(12px, 1.6vw, 14px);
 }
 
+/* make header stay visible and look premium */
+.site-header{
+  position: sticky; top: 0; z-index: 1000;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(17,22,28,0.85) 0%, rgba(15,18,22,0.85) 100%);
+}
+
+/* small button for contact */
+.btn {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.45rem .8rem; border-radius:999px;
+  background: var(--accent); color:#09131d; font-weight:700;
+  border:1px solid #2a3442; text-decoration:none;
+}
+.btn:hover{ filter:brightness(1.05); text-decoration:none; }
+
+
 .nav {
   margin: 12px 0;
   display: flex;
