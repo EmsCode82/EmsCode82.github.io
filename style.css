@@ -207,3 +207,8 @@ footer {
 
 /* top hero image spacing */
 .hero { margin: 12px 0 24px; }
+
+/* Vertical rhythm: add space before the first panel and between panels */
+.container > .panel:first-of-type { margin-top: 12px; }   /* space under header */
+.container > .panel + .panel     { margin-top: 24px; }   /* space between panels */
+
