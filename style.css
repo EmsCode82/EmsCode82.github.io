@@ -238,3 +238,102 @@ footer{
 @media (prefers-reduced-motion:reduce){
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
 }
+
+/* ===========================================================
+   Fancy UI Pack — glass, gradients, micro-interactions
+   (Drop at the end of style.css)
+   =========================================================== */
+
+/* ---------- Background: subtle gradient field ---------- */
+.bg-fancy {
+  background:
+    radial-gradient(1200px 800px at 10% -10%, #11202a 0%, transparent 60%),
+    radial-gradient(1000px 600px at 90% -20%, #1b2440 0%, transparent 60%),
+    radial-gradient(900px 600px at 50% 120%, #18252e 0%, transparent 60%),
+    var(--bg);
+}
+
+/* ---------- Glassmorphism (safe, tasteful) ---------- */
+.theme-glass .panel,
+.theme-glass .site-header {
+  background: rgba(20, 24, 30, 0.5);
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .theme-glass .panel,
+  .theme-glass .site-header {
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+  }
+}
+
+/* Add a faint inner highlight for “pane” feeling */
+.theme-glass .panel::before {
+  content:"";
+  position:absolute; inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+  mix-blend-mode:overlay; opacity:.6;
+}
+/* Ensure positioned ancestor for ::before */
+.theme-glass .panel { position: relative; }
+
+/* ---------- Gradient headings (subtle) ---------- */
+.theme-glass h1, .theme-glass h2 {
+  background: linear-gradient(90deg, #b9e6ff 0%, #8bd3ff 60%, #c8d6ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Animated underline for links ---------- */
+.link-ux, .nav a {
+  position: relative;
+  text-decoration: none;
+}
+.link-ux::after, .nav a::after {
+  content:"";
+  position:absolute; left:0; bottom:-2px;
+  width:0; height:2px; background: var(--link);
+  transition: width .18s ease;
+}
+.link-ux:hover::after, .nav a:hover::after { width:100%; }
+
+/* Keep the active nav pill looking like a pill even with underline */
+.nav a.active::after { display:none; }
+
+/* ---------- Card glow on hover ---------- */
+.card {
+  transform: translateY(0);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0,0,0,.35), 0 0 0 1px rgba(139,211,255,.08) inset;
+  border-color: #2a3442;
+}
+/* subtle corner glow */
+.card::after{
+  content:"";
+  position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  background: radial-gradient(400px 200px at 20% 0%, rgba(139,211,255,.10), transparent 60%);
+  opacity:0; transition: opacity .2s ease;
+}
+.card:hover::after{ opacity:1; }
+.card { position: relative; }
+
+/* ---------- Button sheen (Contact) ---------- */
+.btn{
+  position:relative; overflow:hidden;
+}
+.btn::after{
+  content:"";
+  position:absolute; inset:0 -40%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.35) 35%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform .35s ease;
+}
+.btn:hover::after{ transform: translateX(120%); }
