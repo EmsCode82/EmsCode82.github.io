@@ -14,7 +14,7 @@
   <meta property="og:title" content="To-Do CRUD API — Eric Shepard">
   <meta property="og:description" content="CRUD API built with ASP.NET Core and EF Core (LocalDB).">
   <meta property="og:url" content="https://emscode82.github.io/todo-crud.html">
-  <meta property="og:image" content="https://emscode82.github.io/img/screenshot1.png"> <!-- swap to a todo-crud specific image later if you add one -->
+  <meta property="og:image" content="https://emscode82.github.io/img/screenshot1.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Canonical + theme -->
@@ -40,167 +40,131 @@
     </div>
 
     <div class="header-row">
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active link-ux" aria-current="page">Projects</a>
-      <a href="about.html">About</a>
-    </nav>
-    <a class="btn cta" href="about.html#contact">Contact</a>
-  </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active link-ux" aria-current="page">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a class="btn cta" href="about.html#contact">Contact</a>
+    </div>
   </header>
 
   <main id="main">
-    <div class="container">
-      <section class="panel">
-        <h2>To-Do CRUD API <span class="badge badge-progress">In Progress</span></h2>
-        <p class="lead">ASP.NET Core 8 Web API with EF Core + SQL Server LocalDB.</p>
+    <div class="container grid grid-2">
+      <!-- LEFT: main case-study content -->
+      <div class="col-l">
+        <section class="panel">
+          <h2>To-Do CRUD API <span class="badge badge-progress">In&nbsp;Progress</span></h2>
+          <p class="lead">ASP.NET Core 8 Web API with EF Core + SQL Server LocalDB.</p>
 
-        <h3>What it does</h3>
-        <p>Simple REST service for managing tasks with create/read/update/delete operations.</p>
+          <h3>What it does</h3>
+          <p>Simple REST service for managing tasks with create/read/update/delete operations.</p>
 
-        <h3>Stack</h3>
-        <div class="tags">
-          <span class="tag">ASP.NET Core</span>
-          <span class="tag">EF Core</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Swagger</span>
+          <h3>Stack</h3>
+          <div class="tags">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Swagger</span>
+          </div>
+
+          <h3>Highlights</h3>
+          <ul>
+            <li>Async EF Core CRUD with <code>DbContext</code>.</li>
+            <li>Auto-migrate on startup + seed sample data.</li>
+            <li>Clear DTOs for request/response shaping.</li>
+          </ul>
+
+          <h3>Next up</h3>
+          <ul>
+            <li>Unit tests for controller and <code>DbContext</code>.</li>
+            <li>Error-handling middleware (problem details).</li>
+            <li>CI badge and minimal deployment target.</li>
+          </ul>
+
+          <p><a class="link-ux" href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">GitHub Code</a></p>
+          <p><a href="projects.html">← Back to Projects</a></p>
+        </section>
+      </div>
+
+      <!-- RIGHT: quick facts / sticky card -->
+      <aside class="col-r sticky">
+        <div class="card">
+          <h3 class="h4">Quick facts</h3>
+          <ul class="list-compact">
+            <li><strong>Language/Framework:</strong> C#, ASP.NET Core 8</li>
+            <li><strong>ORM:</strong> EF Core</li>
+            <li><strong>Database:</strong> SQL Server LocalDB</li>
+            <li><strong>Docs:</strong> Swagger (OpenAPI)</li>
+          </ul>
+
+          <h4>Local setup</h4>
+          <pre><code>dotnet restore
+dotnet ef database update
+dotnet run --project ToDoCrud.Api</code></pre>
+
+          <h4>Endpoints</h4>
+          <pre><code>GET    /api/todos
+GET    /api/todos/{id}
+POST   /api/todos
+PUT    /api/todos/{id}
+DELETE /api/todos/{id}</code></pre>
+
+          <p><a class="btn btn-secondary" href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">Open repo</a></p>
         </div>
-
-        <h3>Highlights</h3>
-        <ul>
-          <li>Async EF Core CRUD with DbContext.</li>
-          <li>Auto-migrate on startup + seed sample data.</li>
-          <li>Clear DTOs for request/response shaping.</li>
-        </ul>
-
-        <h3>Next up</h3>
-        <ul>
-          <li>Unit tests for controller and DbContext.</li>
-          <li>Error-handling middleware (problem details).</li>
-          <li>CI badge and minimal deployment target.</li>
-        </ul>
-
-        <p><a href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">GitHub Code</a></p>
-        <p><a href="projects.html">← Back to Projects</a></p>
-      </section>
+      </aside>
     </div>
-    
+
+    <!-- Learning notes: full-width educational block -->
     <section class="panel edu-block" id="learning-notes">
       <h3>Learning notes</h3>
 
       <details>
         <summary>DTOs vs Entities (why bother?)</summary>
-          <p>
-            <strong>Entities</strong> map to database tables and include persistence concerns (keys, relationships).
-            <strong>DTOs</strong> are slim request/response shapes you expose over the API. DTOs help you:
-            1) avoid over-posting, 2) version your API without breaking your DB schema, 3) keep validation at the edges.
-          </p>
-          <pre><code>
-            public record TodoDto(int Id, string Title, bool IsDone);
-            public record TodoCreateDto(string Title);
-            public record TodoUpdateDto(string Title, bool IsDone);
-          </code></pre>
+        <p>
+          <strong>Entities</strong> map to database tables and include persistence concerns (keys, relationships).
+          <strong>DTOs</strong> are slim request/response shapes you expose over the API. DTOs help you:
+          1) avoid over-posting, 2) version your API without breaking your DB schema, 3) keep validation at the edges.
+        </p>
+        <pre><code>public record TodoDto(int Id, string Title, bool IsDone);
+public record TodoCreateDto(string Title);
+public record TodoUpdateDto(string Title, bool IsDone);</code></pre>
       </details>
+
       <details>
         <summary>EF Core: migrations in plain English</summary>
-          <p>
-            A <em>migration</em> is a tracked snapshot of schema changes. Typical flow:
-          </p>
-          <pre><code>// Create a migration from current model
-            Add-Migration Init
+        <p>A <em>migration</em> is a tracked snapshot of schema changes. Typical flow:</p>
+        <pre><code>// Create a migration from current model
+Add-Migration Init
 
-            // Apply to the configured database
-            Update-Database
+// Apply to the configured database
+Update-Database
 
-            // If you need to tweak before applying
-            Remove-Migration // (only if not applied yet)
+// If you need to tweak before applying
+Remove-Migration  // (only if not applied yet)
 
-            // Seeding: run code on startup to insert sample rows
-          </code></pre>
+// Seeding: run code on startup to insert sample rows</code></pre>
       </details>
+
       <details>
-      <summary>CRUD endpoints – predictable shape</summary>
-        <pre><code>
-          GET    /api/todos          // list
-          GET    /api/todos/{id}     // by id
-          POST   /api/todos          // create (TodoCreateDto)
-          PUT    /api/todos/{id}     // update (TodoUpdateDto)
-          DELETE /api/todos/{id}     // delete
-        </code></pre>
-        <p>
-          Keep request bodies small (DTOs), validate at the controller boundary, and return <code>201 Created</code> with
-          <code>CreatedAtAction</code> on POST.
-        </p>
+        <summary>CRUD endpoints – predictable shape</summary>
+        <pre><code>GET    /api/todos          // list
+GET    /api/todos/{id}     // by id
+POST   /api/todos          // create (TodoCreateDto)
+PUT    /api/todos/{id}     // update (TodoUpdateDto)
+DELETE /api/todos/{id}     // delete</code></pre>
+        <p>Keep request bodies small (DTOs), validate at the controller boundary, and return <code>201 Created</code> with <code>CreatedAtAction</code> on POST.</p>
       </details>
+
       <details>
-      <summary>LocalDB vs full SQL Server</summary>
+        <summary>LocalDB vs full SQL Server</summary>
         <p>
           <strong>LocalDB</strong> is a developer-friendly SQL Server instance that runs per-user.
-          Connection string points to <code>(localdb)\MSSQLLocalDB</code>. Later, swap to full SQL Server/Azure SQL by changing
-          the connection string—your EF Core migrations still apply.
+          Your connection string points to <code>(localdb)\MSSQLLocalDB</code>. Later, swap to full SQL Server/Azure SQL by
+          changing the connection string—your EF Core migrations still apply.
         </p>
       </details>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </main>
 
   <footer>
