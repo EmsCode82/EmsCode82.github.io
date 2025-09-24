@@ -215,3 +215,20 @@ footer {
 .toc{margin:8px 0 16px;font-size:.95rem}
 .toc a{margin-right:.5rem}
 
+/* brand meta chips (compact credential line) */
+.meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 0;padding:0;list-style:none}
+.chip{
+  padding:.2rem .6rem;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#121a22;
+  font-size:.85rem;
+  color:var(--muted);
+}
+
+/* subtle header bottom edge for depth */
+.site-header{
+  border-bottom:1px solid var(--border);
+  box-shadow:0 6px 24px rgba(0,0,0,.25) inset;
+}
+
