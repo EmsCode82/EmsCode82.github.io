@@ -346,3 +346,11 @@ footer{
 }
 .header-row .nav{ margin:0; }
 .header-row .cta{ margin-left:auto; } /* pushes Contact to the far right */
+
+@media (min-width: 880px){
+  .header-row{ flex-wrap: nowrap; }
+}
+
+@media (max-width: 700px){ .container>.panel{ margin-top:24px; } }
+
+.btn:hover{ filter:brightness(1.08); box-shadow:0 6px 16px rgba(0,0,0,.25); }
