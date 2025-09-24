@@ -100,15 +100,18 @@
 
           <h4>Local setup</h4>
           <pre><code>dotnet restore
-dotnet ef database update
-dotnet run --project ToDoCrud.Api</code></pre>
+            dotnet ef database update
+            dotnet run --project ToDoCrud.Api
+          </code></pre>
 
           <h4>Endpoints</h4>
-          <pre><code>GET    /api/todos
-GET    /api/todos/{id}
-POST   /api/todos
-PUT    /api/todos/{id}
-DELETE /api/todos/{id}</code></pre>
+          <pre><code>
+            GET    /api/todos
+            GET    /api/todos/{id}
+            POST   /api/todos
+            PUT    /api/todos/{id}
+            DELETE /api/todos/{id}
+          </code></pre>
 
           <p><a class="btn btn-secondary" href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">Open repo</a></p>
         </div>
@@ -127,32 +130,36 @@ DELETE /api/todos/{id}</code></pre>
           1) avoid over-posting, 2) version your API without breaking your DB schema, 3) keep validation at the edges.
         </p>
         <pre><code>public record TodoDto(int Id, string Title, bool IsDone);
-public record TodoCreateDto(string Title);
-public record TodoUpdateDto(string Title, bool IsDone);</code></pre>
+          public record TodoCreateDto(string Title);
+          public record TodoUpdateDto(string Title, bool IsDone);
+        </code></pre>
       </details>
 
       <details>
         <summary>EF Core: migrations in plain English</summary>
         <p>A <em>migration</em> is a tracked snapshot of schema changes. Typical flow:</p>
         <pre><code>// Create a migration from current model
-Add-Migration Init
+          Add-Migration Init
 
-// Apply to the configured database
-Update-Database
+          // Apply to the configured database
+          Update-Database
 
-// If you need to tweak before applying
-Remove-Migration  // (only if not applied yet)
+          // If you need to tweak before applying
+          Remove-Migration  // (only if not applied yet)
 
-// Seeding: run code on startup to insert sample rows</code></pre>
+          // Seeding: run code on startup to insert sample rows
+        </code></pre>
       </details>
 
       <details>
         <summary>CRUD endpoints – predictable shape</summary>
-        <pre><code>GET    /api/todos          // list
-GET    /api/todos/{id}     // by id
-POST   /api/todos          // create (TodoCreateDto)
-PUT    /api/todos/{id}     // update (TodoUpdateDto)
-DELETE /api/todos/{id}     // delete</code></pre>
+        <pre><code>
+          GET    /api/todos          // list
+          GET    /api/todos/{id}     // by id
+          POST   /api/todos          // create (TodoCreateDto)
+          PUT    /api/todos/{id}     // update (TodoUpdateDto)
+          DELETE /api/todos/{id}     // delete
+        </code></pre>
         <p>Keep request bodies small (DTOs), validate at the controller boundary, and return <code>201 Created</code> with <code>CreatedAtAction</code> on POST.</p>
       </details>
 

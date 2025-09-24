@@ -409,3 +409,20 @@ footer{
   .case-grid{ grid-template-columns: 1fr; }
   .case-aside{ position: static; }
 }
+
+/* Two-column layout spacing */
+.two-col {
+  /* existing grid rules ... */
+  margin-bottom: 28px;        /* restores space under the grid */
+}
+
+.two-col .panel {
+  margin: 0;                  /* keep inner panels flush in the grid */
+}
+
+/* (optional) slightly smaller gap on mobile */
+@media (max-width: 900px) {
+  .two-col { margin-bottom: 20px; }
+}
+
+.panel { margin: 20px 0; }    /* was likely ~12–16px */
