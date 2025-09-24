@@ -39,124 +39,149 @@
         <li class="chip">Incoming University of Cincinnati B.S. — Software Application Development</li>
       </ul>
     </div>
-    
+
     <div class="header-row">
-    <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="projects.html" class="active link-ux" aria-current="page">Projects</a>
         <a href="about.html">About</a>
-    </nav>
-    <a class="btn cta" href="about.html#contact">Contact</a>
+      </nav>
+      <a class="btn cta" href="about.html#contact">Contact</a>
     </div>
   </header>
 
   <main id="main">
-    <div class="container">
-      <section class="panel">
-        <h2>Assetgineer <span class="badge badge-progress">In Progress</span></h2>
+    <div class="container grid grid-2">
+      <!-- LEFT: main case-study content -->
+      <div class="col-l">
+        <section class="panel">
+          <h2>Assetgineer <span class="badge badge-live">Live</span></h2>
 
-        <p class="lead">
-          <strong>Assetgineer</strong> is an AI-powered web application that helps game developers
-          conceptualize, create, and manage digital art assets. It transforms high-level game concepts
-          into production-ready visuals and streamlines the entire workflow from ideation to implementation.
-        </p>
+          <p class="lead">
+            <strong>Assetgineer</strong> is an AI-assisted tool for turning high-level game concepts into
+            consistent visual assets, then managing those assets with tags, collections, and version history.
+          </p>
 
-        <!-- On-page nav -->
-        <nav class="toc" aria-label="On this page">
-          <strong>Contents:</strong>
-          <a href="#overview">Overview</a> ·
-          <a href="#prompt-engine">Prompt Generation Engine</a> ·
-          <a href="#management">Asset Management</a> ·
-          <a href="#screens">Screenshots</a>
-        </nav>
+          <!-- On-page nav -->
+          <nav class="toc" aria-label="On this page">
+            <strong>Contents:</strong>
+            <a href="#overview">Overview</a> ·
+            <a href="#prompt-engine">Prompt Engine</a> ·
+            <a href="#management">Asset Management</a> ·
+            <a href="#screens">Screens</a>
+          </nav>
 
-        <h3 id="overview">Overview</h3>
-        <p>
-          Moving beyond traditional pipelines, Assetgineer leverages modern AI to turn game ideas into
-          consistent, production-ready assets. It supports characters, locations, items, weapons, enemies,
-          VFX, and UI elements—providing a cohesive path from creative intent to usable art while preserving
-          consistency of style and lore across a project.
-        </p>
+          <h3 id="overview">Overview</h3>
+          <p>
+            Moving beyond traditional pipelines, Assetgineer turns ideas into production-ready assets across characters,
+            locations, items, weapons, enemies, VFX, and UI. It emphasizes <em>consistency</em> of style and lore as a
+            project grows.
+          </p>
 
-        <h3 id="prompt-engine">Intelligent Prompt Generation Engine</h3>
-        <p>
-          At the core is a prompt generator that translates user parameters into highly detailed,
-          model-friendly prompts so image models produce the look you want reliably.
-        </p>
-        <ul>
-          <li>
-            <strong>Contextual &amp; Cohesive Design.</strong> Deep game-dev context:
-            racial characteristics for nuanced fantasy characters; biome and architectural styles for locations;
-            elemental infusions for items and weapons—so assets feel like they belong to the same world.
-          </li>
-          <li>
-            <strong>Adaptive Styling.</strong> From pixel art to photorealism, select an aesthetic and Assetgineer
-            adapts positive/negative keywords to match it, avoiding common generation pitfalls while maintaining consistency.
-          </li>
-          <li>
-            <strong>Robust Customization &amp; Modularity.</strong> Fine-tune physical attributes (hair, eyes, skin, beard),
-            clothing by slot/material/color, staging (framing, camera, lighting, background), and pose (with directional pose
-            detection and automatic camera adjustment).
-          </li>
-          <li>
-            <strong>Randomize All &amp; Section-Specific Randomization.</strong> Unblock creativity and iterate fast by
-            randomizing an entire concept—or just a section like outfits—with curated, context-aware suggestions.
-          </li>
-          <li>
-            <strong>Image-to-Image &amp; In-painting.</strong> Start from an existing image, enhance it, or use masked
-            in-painting to surgically change details using targeted prompts.
-          </li>
-          <li>
-            <strong>Transparent AI Logic (<em>Prompt Analysis</em>).</strong> A tree view shows how the final prompt is constructed
-            step-by-step, helping users learn, refine, and trust the generation process.
-          </li>
-        </ul>
+          <h3 id="prompt-engine">Intelligent Prompt Engine</h3>
+          <p>
+            A structured prompt generator translates user inputs into model-ready prompts for reliable output.
+          </p>
+          <ul>
+            <li><strong>Contextual controls:</strong> races/biomes/architecture for world coherence; elemental infusions for items/weapons.</li>
+            <li><strong>Adaptive styling:</strong> pixel art → photoreal; positive/negative terms auto-tuned to the chosen aesthetic.</li>
+            <li><strong>Granular knobs:</strong> physical attributes, outfit slots/materials/colors, staging (camera/lighting/bg), and pose.</li>
+            <li><strong>Randomize intelligently:</strong> “randomize all” or section-only to iterate quickly without losing context.</li>
+            <li><strong>Image-to-image &amp; in-painting:</strong> refine existing images or surgically edit masked regions.</li>
+            <li><strong>Prompt Analysis:</strong> a tree view shows how the final prompt is composed, step-by-step.</li>
+          </ul>
 
-        <h3 id="management">Comprehensive Asset Management</h3>
-        <p>
-          Assetgineer includes a full management layer so teams can keep growing libraries organized and ready for production.
-        </p>
-        <ul>
-          <li><strong>Dynamic Asset Library.</strong> Browse, filter, and sort by type, tags, and custom collections.</li>
-          <li><strong>Collection Manager.</strong> Group related assets into scalable collections for projects or features.</li>
-          <li><strong>Version Control &amp; History.</strong> Track the evolution of each asset, generate variations,
-              compare changes, or revert to earlier iterations.</li>
-          <li><strong>Bulk Operations.</strong> Efficiently modify large sets—bulk delete, tag, or assign to collections.</li>
-          <li><strong>Detailed Asset View.</strong> See the image, original prompt, input parameters, and version history together.</li>
-          <li><strong>Seamless Integration.</strong> Load any asset back into the generator for further editing—closing the loop
-              between creation and iteration.</li>
-        </ul>
+          <h3 id="management">Comprehensive Asset Management</h3>
+          <ul>
+            <li><strong>Dynamic library:</strong> browse, filter, and sort by type, tags, and custom collections.</li>
+            <li><strong>Collections:</strong> group related assets for features or releases.</li>
+            <li><strong>Version history:</strong> variations, diffs, and quick rollback.</li>
+            <li><strong>Bulk ops:</strong> tag, assign, and delete at scale.</li>
+            <li><strong>Details view:</strong> image, original prompt, parameters, lineage.</li>
+            <li><strong>Loop-back:</strong> load any asset back into the generator for further edits.</li>
+          </ul>
 
-        <h3 id="screens">Screenshots</h3>
-        <div class="shot">
-          <a href="https://assetgineer.com" target="_blank" rel="noopener">
-            <img src="img/assetgineer1.png"
-                 alt="Assetgineer dashboard overview"
-                 loading="lazy" decoding="async" width="960" height="540">
-          </a>
+          <h3 id="screens">Screens</h3>
+          <div class="shot">
+            <a href="https://assetgineer.com" target="_blank" rel="noopener">
+              <img src="img/assetgineer1.png" alt="Assetgineer dashboard overview"
+                   loading="lazy" decoding="async" width="960" height="540">
+            </a>
+          </div>
+          <div class="shot">
+            <a href="https://assetgineer.com" target="_blank" rel="noopener">
+              <img src="img/assetgineer2.png" alt="Collections and batch operations"
+                   loading="lazy" decoding="async" width="960" height="540">
+            </a>
+          </div>
+          <div class="shot">
+            <a href="https://assetgineer.com" target="_blank" rel="noopener">
+              <img src="img/assetgineer3.png" alt="Asset detail with parameters and history"
+                   loading="lazy" decoding="async" width="960" height="540">
+            </a>
+          </div>
+
+          <p>
+            <a href="https://assetgineer.com" target="_blank" rel="noopener">Live Site</a>
+            <span class="sep">•</span>
+            <span class="muted">GitHub (TBD)</span>
+            <span class="sep">•</span>
+            <a href="projects.html">← Back to Projects</a>
+          </p>
+        </section>
+      </div>
+
+      <!-- RIGHT: sticky quick-facts / links -->
+      <aside class="col-r sticky">
+        <div class="card">
+          <h3 class="h4">Quick facts</h3>
+          <ul class="list-compact">
+            <li><strong>Domain:</strong> Game art generation &amp; management</li>
+            <li><strong>Focus:</strong> Consistency, versioning, traceable prompts</li>
+            <li><strong>Integrations:</strong> Works with Texture Resizing Service</li>
+          </ul>
+
+          <h4>Try it</h4>
+          <p><a class="btn btn-secondary" href="https://assetgineer.com" target="_blank" rel="noopener">Open Assetgineer</a></p>
+
+          <h4>Highlights</h4>
+          <ul class="list-compact">
+            <li>Prompt Analysis (transparent construction)</li>
+            <li>Randomize (global/section) for fast iteration</li>
+            <li>Collections, tags, and version history</li>
+          </ul>
+
+          <h4>Links</h4>
+          <p>
+            <a href="projects.html#assetgineer">Project card</a>
+            <span class="sep">•</span>
+            <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Texture Service</a>
+          </p>
         </div>
-        <div class="shot">
-          <a href="https://assetgineer.com" target="_blank" rel="noopener">
-            <img src="img/assetgineer2.png"
-                 alt="Collections and batch operations"
-                 loading="lazy" decoding="async" width="960" height="540">
-          </a>
-        </div>
-        <div class="shot">
-          <a href="https://assetgineer.com" target="_blank" rel="noopener">
-            <img src="img/assetgineer3.png"
-                 alt="Asset detail with parameters and history"
-                 loading="lazy" decoding="async" width="960" height="540">
-          </a>
-        </div>
-
-        <p>
-          <a href="https://assetgineer.com" target="_blank" rel="noopener">Live Site</a> ·
-          <span class="muted">GitHub (TBD)</span> ·
-          <a href="projects.html">← Back to Projects</a>
-        </p>
-      </section>
+      </aside>
     </div>
+
+    <!-- Optional learning notes band (keeps the site “teachable”) -->
+    <section class="panel edu-block">
+      <h3>Learning notes</h3>
+
+      <details>
+        <summary>Prompt engine anatomy (inputs → prompt)</summary>
+        <p>
+          Structured inputs (category, style, constraints, negatives) are combined into a stable prompt so
+          generated images stay consistent across a project. The <em>Prompt Analysis</em> view shows the
+          composition tree so you can reason about changes.
+        </p>
+      </details>
+
+      <details>
+        <summary>Versioned asset library</summary>
+        <p>
+          Treat art like code: store parameters, prompt, and outputs together; create variations; compare;
+          and roll back when a direction doesn’t land. Tags/collections keep sets coherent for features.
+        </p>
+      </details>
+    </section>
   </main>
 
   <footer>
