@@ -337,3 +337,12 @@ footer{
   transition: transform .35s ease;
 }
 .btn:hover::after{ transform: translateX(120%); }
+
+/* Header row with right-aligned CTA */
+.header-row{
+  display:flex; align-items:center; gap:12px;
+  margin-top:8px;
+  flex-wrap:wrap;
+}
+.header-row .nav{ margin:0; }
+.header-row .cta{ margin-left:auto; } /* pushes Contact to the far right */
