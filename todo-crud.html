@@ -25,58 +25,55 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header">
-    <div class="brand">
-        <h1>Eric Shepard</h1>
-        <p>Software Developer</p>
-        <p>• A.A.S. Computer Programming and Database Management – Computer Software Development Major (CSD) (Cincinnati State)</p>
-        <p>• Incoming University of Cincinnati B.S. in Information Technology (Software Application Development)</p>
-    </div>
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active" aria-current="page">Projects</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+    <header class="site-header">
+      <div class="brand">
+          <h1>Eric Shepard</h1>
+          <p>Software Developer</p>
+          <p>• A.A.S. Computer Programming and Database Management – Computer Software Development Major (CSD) (Cincinnati State)</p>
+          <p>• Incoming University of Cincinnati B.S. in Information Technology (Software Application Development)</p>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container">
+        <section class="panel">
+          <h2>To-Do CRUD API <span class="badge badge-progress">In Progress</span></h2>
+          <p class="lead">ASP.NET Core 8 Web API with EF Core + SQL Server LocalDB.</p>
 
-  <main id="main">
-    <div class="container">
-      <section class="panel">
-        <h2>To-Do CRUD API <span class="badge badge-progress">In Progress</span></h2>
-        <p class="lead">ASP.NET Core 8 Web API with EF Core + SQL Server LocalDB.</p>
+          <h3>What it does</h3>
+          <p>Simple REST service for managing tasks with create/read/update/delete operations.</p>
 
-        <h3>What it does</h3>
-        <p>Simple REST service for managing tasks with create/read/update/delete operations.</p>
+          <h3>Stack</h3>
+          <div class="tags"><span class="tag">ASP.NET Core</span><span class="tag">EF Core</span><span class="tag">SQL</span><span class="tag">Swagger</span></div>
 
-        <h3>Stack</h3>
-        <div class="tags"><span class="tag">ASP.NET Core</span><span class="tag">EF Core</span><span class="tag">SQL</span><span class="tag">Swagger</span></div>
+          <h3>Highlights</h3>
+          <ul>
+            <li>Async EF Core CRUD with DbContext.</li>
+            <li>Auto-migrate on startup + seed sample data.</li>
+            <li>Clear DTOs for request/response shaping.</li>
+          </ul>
 
-        <h3>Highlights</h3>
-        <ul>
-          <li>Async EF Core CRUD with DbContext.</li>
-          <li>Auto-migrate on startup + seed sample data.</li>
-          <li>Clear DTOs for request/response shaping.</li>
-        </ul>
+          <h3>Next up</h3>
+          <ul>
+            <li>Unit tests for controller and DbContext.</li>
+            <li>Error-handling middleware (problem details).</li>
+            <li>CI badge and minimal deployment target.</li>
+          </ul>
 
-        <h3>Next up</h3>
-        <ul>
-          <li>Unit tests for controller and DbContext.</li>
-          <li>Error-handling middleware (problem details).</li>
-          <li>CI badge and minimal deployment target.</li>
-        </ul>
-
-        <p><a href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">GitHub Code</a></p>
-        <p><a href="projects.html">← Back to Projects</a></p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <p>Open to Software Developer roles — <a href="about.html#contact">Contact</a></p>
-    <p>© 2025 Eric Shepard</p>
-  </footer>
-</body>
+          <p><a href="https://github.com/EmsCode82/ToDoCrud.Api" target="_blank" rel="noopener">GitHub Code</a></p>
+          <p><a href="projects.html">← Back to Projects</a></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Open to Software Developer roles — <a href="about.html#contact">Contact</a></p>
+      <p>© 2025 Eric Shepard</p>
+    </footer>
+  </body>
 </html>
