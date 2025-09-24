@@ -25,7 +25,21 @@
   <link rel="preload" as="image" href="img/assetgineer6.png" imagesrcset="img/assetgineer6.png">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
+
+  <!-- Page-local layout for the two-column intro -->
+  <style>
+    .intro-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 560px) 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 1000px) {
+      .intro-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body class="theme-glass bg-fancy">
   <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -50,73 +64,82 @@
   </header>
 
   <main id="main">
-    <div class="container">
-      <div class="shot hero">
-        <img
-          src="img/assetgineer6.png"
-          alt="Assetgineer pipeline dashboard"
-          width="960"
-          height="540"
-          decoding="async">
-          <p>Created using Assetgineer</p>
+    <!-- Two-column intro: summary (left) + hero (right) -->
+    <div class="container-wide">
+      <div class="intro-grid">
+        <section class="panel" id="summary">
+          <h2>Software Application Developer</h2>
+
+          <ul class="meta">
+            <li class="chip">C# · ASP.NET Core · EF Core</li>
+            <li class="chip">SQL Server &amp; MySQL (data modeling, migrations)</li>
+            <li class="chip">Java · Python/Flask · Flutter</li>
+          </ul>
+
+          <p class="lead">
+            I build clean, data-driven web apps and APIs. I completed an
+            <strong>A.A.S. in Computer Programming &amp; Database Management</strong> at Cincinnati State
+            and I’m admitted to the University of Cincinnati’s <strong>B.S. in Software Development</strong>
+            (starts Jan 2026).
+          </p>
+
+          <p>
+            Strengths: designing <strong>REST APIs</strong>, modeling relational data, and implementing
+            <strong>auth/roles</strong> with ASP.NET Identity. I value readable code, small iterations, and tests.
+            Everyday tools: <strong>EF Core</strong> migrations/seed data, <strong>SSMS</strong>, <strong>Postman</strong>,
+            and <strong>Git/GitHub</strong>.
+          </p>
+
+          <h3>Now building</h3>
+          <ul>
+            <li>
+              <a href="assetgineer.html" class="link-ux">Assetgineer</a> — AI-assisted asset pipeline for game art
+              (prompt engine, versioned library with collections/tags).
+            </li>
+            <li>
+              Texture Resizing Service — Python/Flask microservice for image/texture processing, with a small web UI.
+            </li>
+          </ul>
+
+          <h3>Selected work</h3>
+          <ul>
+            <li>
+              <a href="todo-crud.html" class="link-ux">To-Do CRUD API</a> — ASP.NET Core + EF Core (LocalDB);
+              DTOs, migrations, seeding, Swagger.
+            </li>
+            <li>
+              LFG (Looking for Group) — Flutter front-end backed by ASP.NET Core Web API + SQL Server
+              (authentication, messaging, reviews).
+            </li>
+            <li>
+              PREDAQ Program Review (co-op) — ASP.NET Core + Identity + EF Core; users/roles/claims, normalized schema,
+              migrations, and admin tools.
+            </li>
+          </ul>
+
+          <h3>Next steps</h3>
+          <ul>
+            <li>Unit/integration tests for the To-Do API.</li>
+            <li>Auth hardening + basic audit logging on my blog/auth project.</li>
+            <li>Docs and lightweight demo deployments for featured projects.</li>
+          </ul>
+        </section>
+
+        <figure class="shot hero">
+          <img
+            src="img/assetgineer6.png"
+            alt="Assetgineer pipeline dashboard"
+            width="960"
+            height="540"
+            decoding="async"
+            fetchpriority="high">
+          <figcaption>Created using Assetgineer</figcaption>
+        </figure>
       </div>
-      <section class="panel" id="summary">
-        <h2>Software Application Developer</h2>
+    </div>
 
-        <ul class="meta">
-          <li class="chip">C# · ASP.NET Core · EF Core</li>
-          <li class="chip">SQL Server & MySQL (data modeling, migrations)</li>
-          <li class="chip">Java · Python/Flask · Flutter</li>
-        </ul>
-
-        <p class="lead">
-          I build clean, data-driven web apps and APIs. I completed an
-          <strong>A.A.S. in Computer Programming &amp; Database Management</strong> at Cincinnati State
-          and I’m admitted to the University of Cincinnati’s <strong>B.S. in Software Development</strong>
-          (starts Jan 2026).
-        </p>
-
-        <p>
-          Strengths: designing <strong>REST APIs</strong>, modeling relational data, and implementing
-          <strong>auth/roles</strong> with ASP.NET Identity. I value readable code, small iterations, and tests.
-          Everyday tools: <strong>EF Core</strong> migrations/seed data, <strong>SSMS</strong>, <strong>Postman</strong>,
-          and <strong>Git/GitHub</strong>.
-        </p>
-
-        <h3>Now building</h3>
-        <ul>
-          <li>
-            <a href="assetgineer.html" class="link-ux">Assetgineer</a> — AI-assisted asset pipeline for game art
-            (prompt engine, versioned library with collections/tags).
-          </li>
-          <li>
-            Texture Resizing Service — Python/Flask microservice for image/texture processing, with a small web UI.
-          </li>
-        </ul>
-
-        <h3>Selected work</h3>
-        <ul>
-          <li>
-            <a href="todo-crud.html" class="link-ux">To-Do CRUD API</a> — ASP.NET Core + EF Core (LocalDB);
-            DTOs, migrations, seeding, Swagger.
-          </li>
-          <li>
-            LFG (Looking for Group) — Flutter front-end backed by ASP.NET Core Web API + SQL Server
-            (authentication, messaging, reviews).
-          </li>
-          <li>
-            PREDAQ Program Review (co-op) — ASP.NET Core + Identity + EF Core; users/roles/claims, normalized schema,
-            migrations, and admin tools.
-          </li>
-        </ul>
-
-        <h3>Next steps</h3>
-        <ul>
-          <li>Unit/integration tests for the To-Do API.</li>
-          <li>Auth hardening + basic audit logging on my blog/auth project.</li>
-          <li>Docs and lightweight demo deployments for featured projects.</li>
-        </ul>
-      </section>
+    <!-- Roadmap / objective panel (kept below; constrained width) -->
+    <div class="container">
       <section class="panel edu-block" id="focus">
         <h3>Current Objective</h3>
         <p class="lead">
@@ -145,9 +168,9 @@
           <summary>Secondary — Assetgineer v0.1 (flagship)</summary>
           <ul>
             <li>Prompt engine (structured params → prompt) — MVP</li>
-            <li>Versioned asset library (tags & collections) — MVP</li>
+            <li>Versioned asset library (tags &amp; collections) — MVP</li>
             <li>Image ops (inpainting, img-to-img) — stub</li>
-            <li>Case study & docs page — draft</li>
+            <li>Case study &amp; docs page — draft</li>
           </ul>
           <p>Focus: demonstrate data modeling, API design, and end-to-end product thinking.</p>
         </details>
@@ -160,7 +183,7 @@
           </ul>
         </details>
       </section>
-    </div>    
+    </div>
   </main>
 
   <footer>
