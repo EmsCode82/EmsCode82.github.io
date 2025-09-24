@@ -84,6 +84,123 @@
         <p><a href="projects.html">← Back to Projects</a></p>
       </section>
     </div>
+    
+    <section class="panel edu-block" id="learning-notes">
+      <h3>Learning notes</h3>
+
+      <details>
+        <summary>DTOs vs Entities (why bother?)</summary>
+          <p>
+            <strong>Entities</strong> map to database tables and include persistence concerns (keys, relationships).
+            <strong>DTOs</strong> are slim request/response shapes you expose over the API. DTOs help you:
+            1) avoid over-posting, 2) version your API without breaking your DB schema, 3) keep validation at the edges.
+          </p>
+          <pre><code>
+            public record TodoDto(int Id, string Title, bool IsDone);
+            public record TodoCreateDto(string Title);
+            public record TodoUpdateDto(string Title, bool IsDone);
+          </code></pre>
+      </details>
+      <details>
+        <summary>EF Core: migrations in plain English</summary>
+          <p>
+            A <em>migration</em> is a tracked snapshot of schema changes. Typical flow:
+          </p>
+          <pre><code>// Create a migration from current model
+            Add-Migration Init
+
+            // Apply to the configured database
+            Update-Database
+
+            // If you need to tweak before applying
+            Remove-Migration // (only if not applied yet)
+
+            // Seeding: run code on startup to insert sample rows
+          </code></pre>
+      </details>
+      <details>
+      <summary>CRUD endpoints – predictable shape</summary>
+        <pre><code>
+          GET    /api/todos          // list
+          GET    /api/todos/{id}     // by id
+          POST   /api/todos          // create (TodoCreateDto)
+          PUT    /api/todos/{id}     // update (TodoUpdateDto)
+          DELETE /api/todos/{id}     // delete
+        </code></pre>
+        <p>
+          Keep request bodies small (DTOs), validate at the controller boundary, and return <code>201 Created</code> with
+          <code>CreatedAtAction</code> on POST.
+        </p>
+      </details>
+      <details>
+      <summary>LocalDB vs full SQL Server</summary>
+        <p>
+          <strong>LocalDB</strong> is a developer-friendly SQL Server instance that runs per-user.
+          Connection string points to <code>(localdb)\MSSQLLocalDB</code>. Later, swap to full SQL Server/Azure SQL by changing
+          the connection string—your EF Core migrations still apply.
+        </p>
+      </details>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
   <footer>

@@ -354,3 +354,22 @@ footer{
 @media (max-width: 700px){ .container>.panel{ margin-top:24px; } }
 
 .btn:hover{ filter:brightness(1.08); box-shadow:0 6px 16px rgba(0,0,0,.25); }
+
+/* Teaching blocks */
+.edu-block details {
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 12px;
+  padding: .75rem 1rem;
+  margin: .75rem 0;
+  background: rgba(20,24,30,.35);
+}
+.edu-block details[open] { background: rgba(20,24,30,.5); }
+.edu-block summary {
+  cursor: pointer; font-weight: 700; list-style: none;
+}
+.edu-block summary::-webkit-details-marker { display: none; }
+.edu-block pre {
+  background: #0b141c; border: 1px solid #1f2a36;
+  border-radius: 8px; padding: .75rem; overflow:auto;
+  margin:.5rem 0 0;
+}
