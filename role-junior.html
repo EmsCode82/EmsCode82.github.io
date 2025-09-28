@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Role — Junior / Associate Software Developer — Eric Shepard</title>
+  <meta name="description" content="Junior / Associate Software Developer — training & showcase plan for Eric Shepard. Goal, signature projects, skill coverage, learning plan, experience log, resume bullets, and links." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Junior / Associate Software Developer — Training & Showcase" />
+  <meta property="og:description" content="CRUD + Auth, DB design, testing, Git workflow, deployment, algorithms. Projects, drills, and learning plan." />
+  <meta property="og:url" content="https://emscode82.github.io/role-junior.html" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico">
+  <style>
+    /* tiny helpers for role pages */
+    .subtle { color: var(--muted, #8A94A6); font-size: .95rem; }
+    .kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+    .kpi { padding: 12px; border: 1px solid var(--border, #243041); border-radius: 12px; background: #0f1420; }
+    .kpi strong { display:block; font-size: 1.1rem; }
+    .checklist li { margin: 6px 0; }
+    .resume-bullets li { margin: 6px 0; }
+    .log { border: 1px dashed var(--border, #243041); padding: 12px; border-radius: 12px; background: #0c1018; }
+    .log code { font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Eric Shepard</h1>
+      <p>Software Developer</p>
+      <p>• A.A.S. Computer Software Development (Cincinnati State)</p>
+      <p>• Incoming University of Cincinnati B.S. Software Application Development</p>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">
+        linkedin.com/in/eric-shepard-softwaredev
+      </a>
+      <span class="sep">•</span>
+      <a href="https://github.com/EmsCode82" target="_blank" rel="noopener">
+        github.com/EmsCode82
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <!-- Title / Overview -->
+      <section class="panel">
+        <p class="subtle">Role Roadmap</p>
+        <h2>Junior / Associate Software Developer — Training & Showcase Plan</h2>
+        <p class="lead">
+          Prepare for Cincinnati-area entry-level dev roles by demonstrating full coverage of coding fundamentals, databases,
+          APIs, testing, version control, teamwork, deployment, and algorithms. Show employers you can contribute immediately
+          to a dev team.
+        </p>
+
+        <div class="kpis">
+          <div class="kpi">
+            <strong>Hiring Signals</strong>
+            <div class="subtle">Ship a small app end-to-end; readable code; DB usage; basic auth; tests; clear README.</div>
+          </div>
+          <div class="kpi">
+            <strong>Stack Focus</strong>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">ASP.NET Core</span><span class="tag">EF Core</span>
+              <span class="tag">SQLite/SQL Server</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="kpi">
+            <strong>Portfolio Proof</strong>
+            <div class="subtle">Live demos + GitHub repos + tests + screenshots.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Target Skills -->
+      <section class="panel">
+        <h3>Target Skills (Badges)</h3>
+        <div class="tags">
+          <span class="tag">CRUD APIs</span><span class="tag">REST</span><span class="tag">DB Design</span>
+          <span class="tag">Migrations</span><span class="tag">Auth (JWT)</span><span class="tag">Testing (xUnit)</span>
+          <span class="tag">Git Workflow</span><span class="tag">CI/CD</span><span class="tag">Algorithms</span>
+          <span class="tag">Docs/README</span><span class="tag">Accessibility</span>
+        </div>
+      </section>
+
+      <!-- Signature Projects (detailed here; summary lives on projects.html) -->
+      <section class="panel">
+        <h3>Signature Projects (Portfolio-Ready)</h3>
+
+        <div class="grid">
+          <article class="card">
+            <h4>Task Manager (C#/.NET + SQL)</h4>
+            <p>CRUD API with JWT auth, EF Core migrations, deployed to Azure or Render. Includes Swagger, error handling, and logging.</p>
+            <div class="tags">
+              <span class="tag">ASP.NET Core</span><span class="tag">EF Core</span><span class="tag">JWT</span><span class="tag">SQL</span>
+            </div>
+            <p>
+              <a href="todo-crud.html">Project Plan</a> ·
+              <span class="muted">Repo (TBD)</span> ·
+              <span class="muted">Live (TBD)</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Portfolio Website</h4>
+            <p>Responsive, accessible site (semantic HTML/CSS) on GitHub Pages. Hub for all projects.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span><span class="tag">Accessibility</span>
+            </div>
+            <p>
+              <a href="https://github.com/EmsCode82/EmsCode82.github.io" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="https://emscode82.github.io" target="_blank" rel="noopener">Live</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Library Catalog (SQL)</h4>
+            <p>Schema design, normalization, advanced queries, stored procedures and views. Performance notes included.</p>
+            <div class="tags">
+              <span class="tag">SQL</span><span class="tag">Schema Design</span><span class="tag">Views</span><span class="tag">Sprocs</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Unit Test Suite</h4>
+            <p>xUnit/NUnit coverage for the Task Manager API. Runs in CI with GitHub Actions.</p>
+            <div class="tags">
+              <span class="tag">xUnit</span><span class="tag">NUnit</span><span class="tag">CI</span><span class="tag">GitHub Actions</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Bugfix Sprint Repo</h4>
+            <p>Issue tracker with feature branches and PR workflow. Includes code review notes and commit conventions.</p>
+            <div class="tags">
+              <span class="tag">Git</span><span class="tag">PRs</span><span class="tag">Code Review</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Open-Source Contribution</h4>
+            <p>Fork, branch, and PR to a live repository. Follows conventional commits and contribution guidelines.</p>
+            <div class="tags">
+              <span class="tag">GitHub</span><span class="tag">OSS</span><span class="tag">Conventional Commits</span>
+            </div>
+            <p><span class="muted">Link (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Weather Dashboard</h4>
+            <p>Flutter or React UI integrating a public API with error handling and responsive design.</p>
+            <div class="tags">
+              <span class="tag">Flutter</span><span class="tag">React</span><span class="tag">API</span><span class="tag">Responsive</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span> · <span class="muted">Live (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Algorithms in Action</h4>
+            <p>Sorting, searching, and DS problems with tests and README notes on complexity.</p>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">xUnit</span><span class="tag">Algorithms</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Logging & Debugging Demo</h4>
+            <p>Structured logging (Serilog or built-in), diagnostics, and error handling patterns.</p>
+            <div class="tags">
+              <span class="tag">Logging</span><span class="tag">Diagnostics</span><span class="tag">Error Handling</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span></p>
+          </article>
+
+          <article class="card">
+            <h4>Deployment (Azure App Service)</h4>
+            <p>CI/CD pipeline, environment variables, health checks, and a release checklist.</p>
+            <div class="tags">
+              <span class="tag">Azure</span><span class="tag">CI/CD</span><span class="tag">Health Checks</span>
+            </div>
+            <p><span class="muted">Repo (TBD)</span> · <span class="muted">Live (TBD)</span></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skill Coverage Map -->
+      <section class="panel">
+        <h3>Skill Coverage Map</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Programming</h4>
+            <p class="subtle">C#, SQL, JavaScript, Flutter (extra)</p>
+          </div>
+          <div class="card">
+            <h4>Databases</h4>
+            <p class="subtle">Schema design, normalization, queries, migrations</p>
+          </div>
+          <div class="card">
+            <h4>Web</h4>
+            <p class="subtle">REST APIs, authentication, CRUD</p>
+          </div>
+          <div class="card">
+            <h4>Testing</h4>
+            <p class="subtle">Unit tests, automation, CI pipelines</p>
+          </div>
+          <div class="card">
+            <h4>Version Control</h4>
+            <p class="subtle">Git/GitHub workflows, PR etiquette</p>
+          </div>
+          <div class="card">
+            <h4>Team Skills</h4>
+            <p class="subtle">Bugfixes, issue tracking, code reviews</p>
+          </div>
+          <div class="card">
+            <h4>Deployment</h4>
+            <p class="subtle">Azure basics, GitHub Pages</p>
+          </div>
+          <div class="card">
+            <h4>Algorithms</h4>
+            <p class="subtle">CS foundations & complexity analysis</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Plan -->
+      <section class="panel">
+        <h3>Learning Plan (2-Week Sprint)</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Week 1</h4>
+            <ul class="checklist">
+              <li>Build Task Manager CRUD API + DB (EF Core + migrations)</li>
+              <li>JWT auth + Swagger + basic logging</li>
+              <li>Write README with endpoints + screenshots</li>
+              <li>Deploy (Azure/Render) + verify</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Week 2</h4>
+            <ul class="checklist">
+              <li>Add filters/sorting + validation errors</li>
+              <li>Unit tests with xUnit; run in CI</li>
+              <li>Bugfix sprint (issues → PRs → code review)</li>
+              <li>Update Projects page summary + resume bullets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practice Drills -->
+      <section class="panel">
+        <h3>Practice &amp; Drills</h3>
+        <ul class="checklist">
+          <li>API drills: one endpoint per day (GET, POST, PUT, PATCH, DELETE)</li>
+          <li>SQL drills: joins, group by, having; add an index and measure</li>
+          <li>Tests: add 1–2 per feature; cover happy paths</li>
+          <li>Git: branch → commit → PR → squash; clean messages</li>
+          <li>Docs: update README whenever a feature lands</li>
+        </ul>
+      </section>
+
+      <!-- Experience Log -->
+      <section class="panel">
+        <h3>Experience Log</h3>
+        <div class="log">
+          <p><strong>[YYYY-MM-DD]</strong> Task Manager API: added POST/GET/PUT/DELETE and <code>/toggle</code>; created EF migration <code>InitialCreate</code>.</p>
+          <p><strong>[YYYY-MM-DD]</strong> Deployed to Azure; set env vars; enabled CI; added screenshots to README.</p>
+          <p class="subtle">Keep this brief and factual. Treat it like a changelog employers can scan.</p>
+        </div>
+      </section>
+
+      <!-- Resume Highlights -->
+      <section class="panel">
+        <h3>Resume Highlights (Tailored)</h3>
+        <ul class="resume-bullets">
+          <li>Built and deployed a production-style CRUD API with ASP.NET Core, EF Core, and SQL; delivered Swagger docs and logging.</li>
+          <li>Implemented authentication with JWT; added validation, error handling, and unit tests (xUnit) integrated with GitHub Actions.</li>
+          <li>Practiced professional Git workflow: issues, feature branches, PR review, squash merges; documented changes and decisions.</li>
+          <li>Designed normalized schemas and authored complex SQL queries, stored procedures, and views for reporting.</li>
+        </ul>
+      </section>
+
+      <!-- Links -->
+      <section class="panel">
+        <h3>Links</h3>
+        <p>
+          Portfolio: <a href="https://emscode82.github.io" target="_blank" rel="noopener">emscode82.github.io</a><br/>
+          GitHub: <a href="https://github.com/EmsCode82" target="_blank" rel="noopener">github.com/EmsCode82</a><br/>
+          Texture Service (live): <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Railway</a><br/>
+          Assetgineer (live): <a href="https://assetgineer.com" target="_blank" rel="noopener">assetgineer.com</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Eric Shepard</p>
+  </footer>
+</body>
+</html>
