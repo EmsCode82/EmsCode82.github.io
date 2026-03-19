@@ -45,8 +45,34 @@ html,body{
 
 html{ scroll-behavior:smooth; }
 
-a{ color:var(--link); text-decoration:none; }
-a:hover{ text-decoration:underline; }
+/* Links: always distinguishable without relying on color alone */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--muted);     /* subtle underline color */
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: all 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-color: var(--link);      /* turns accent blue on hover/focus */
+  text-decoration-thickness: 2px;
+}
+
+/* Make the Contact button distinguishable too (no underline on text, but border instead) */
+.btn.cta {
+  text-decoration: none;                   /* no underline on button text */
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn.cta:hover,
+.btn.cta:focus-visible {
+  border-color: var(--link);
+  background-color: rgba(90, 169, 230, 0.08);  /* subtle blue tint */
+}
 
 .muted{ color:var(--muted); }
 
