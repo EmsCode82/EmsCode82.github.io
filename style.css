@@ -219,6 +219,7 @@ h2{ font-size:clamp(18px,2.2vw,24px); }
 }
 .card:hover{ transform:translateY(-2px); border-color:#2a3442; }
 .card p{ color:var(--muted); margin-bottom:12px; }
+.tags{ display:flex; gap:8px; flex-wrap:wrap; }
 .card .tags{ display:flex; gap:8px; flex-wrap:wrap; }
 .card h3 a{ color:inherit; text-decoration:none; }
 .card h3 a:hover, .card h3 a:focus{ text-decoration:underline; }
@@ -236,7 +237,10 @@ h2{ font-size:clamp(18px,2.2vw,24px); }
 .badge{ display:inline-block; padding:.2rem .5rem; border-radius:9999px; font-size:.75rem; }
 .badge-live{ background:#1f9d55; color:#fff; }
 .badge-progress{ background:#3b82f6; color:#fff; }
-.badge-tbd{ background:#6b7280; color:#fff; }
+.badge-github{ background:#24292f; color:#fff; }
+.sep{ color:#3a4352; margin:0 .35rem; }
+.list-compact{ margin:0 0 1rem; padding-left:1.15rem; }
+.list-compact li{ margin:.3rem 0; }
 
 /* Filters (projects page) */
 .filter{ margin:12px 0; }

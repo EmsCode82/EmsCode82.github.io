@@ -1,54 +1,48 @@
-# Portfolio Website — Eric Shepard
+# Eric Shepard — Jr Software Developer
 
-Responsive static portfolio showcasing my projects, skills, and education.  
-Built with **semantic HTML**, **modern CSS**, and deployed on **GitHub Pages**.
+Static GitHub Pages portfolio. Cincinnati. C# / ASP.NET Core / SQL.
 
-**Live Site**: https://emscode82.github.io
+**Live site:** https://emscode82.github.io
 
----
-
-## 🚀 Features
-- Responsive layout (mobile → desktop)
-- Semantic HTML for accessibility & SEO
-- Clean CSS with Flexbox/Grid
-- Skip-link navigation for screen readers
-- Project cards featuring:
-  - Assetgineer — asset preparation pipeline: https://assetgineer.com
-  - Texture Resizer Service — Flask texture pipeline: https://web-production-ec376.up.railway.app
-  - Additional full-stack, mobile, and enterprise projects
+Open to Jr Software Developer roles.
 
 ---
 
-## 🛠 Tech Stack
-- HTML5
-- CSS3 (Grid, Flexbox, media queries, clamp)
-- GitHub Pages for hosting
+## Pages
+
+- `index.html` — Home (who I am, one Now building slot, three real projects)
+- `projects.html` — Assetgineer, Texture Resizer, LFG capstone API
+- `about.html` — Bio, education, co-op, contact
+- `assetgineer.html` — Assetgineer case study
+- `style.css` — Shared theme (glass / dark)
+
+No build step. Clone and open `index.html`, or let GitHub Pages serve the root.
 
 ---
 
-## 📂 Repo Structure
-    /index.html      → Homepage
-    /about.html      → Bio, education, skills
-    /projects.html   → Project showcase
-    /style.css       → Global stylesheet
-    /README.md       → This file
+## Selected work
+
+- **Assetgineer** — live: https://assetgineer.com
+- **Texture Resizer** — GitHub only (not currently deployed): https://github.com/EmsCode82/texture-resizer
+- **LFG capstone API** — GitHub only: https://github.com/EmsCode82/LFGAppAPI
 
 ---
 
-## 💻 Run Locally
-    # Clone the repo
-    git clone https://github.com/EmsCode82/EmsCode82.github.io
-    cd EmsCode82.github.io
+## Education
 
-    # Open index.html in your browser
+- A.A.S. Computer Programming & Database Management (CSD) — Cincinnati State (completed)
+- B.S. Software Application Development — University of Cincinnati (in progress)
 
 ---
 
-## 📜 License
-MIT License — free to use, adapt, and share with attribution.
+## Contact
+
+- Email: emshepard721@gmail.com
+- LinkedIn: https://www.linkedin.com/in/eric-shepard-softwaredev
+- GitHub: https://github.com/EmsCode82
 
 ---
 
-👋 Built and maintained by **Eric Shepard**  
-LinkedIn: https://www.linkedin.com/in/eric-shepard-softwaredev  
-GitHub: https://github.com/EmsCode82
+## License
+
+MIT License — see `License`.

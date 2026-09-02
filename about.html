@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Eric Shepard</title>
+  <title>About — Eric Shepard, Jr Software Developer</title>
 
-  <!-- SEO -->
-  <meta name="description" content="About Eric Shepard: A.A.S. CSD (Cincinnati State); incoming UC B.S. Software Application Development; skills, strengths, recent work, and contact.">
+  <meta name="description" content="About Eric Shepard, Jr Software Developer in Cincinnati. C# / ASP.NET Core / SQL. A.A.S. completed at Cincinnati State; B.S. Software Application Development in progress at UC.">
 
-  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Eric Shepard — About">
-  <meta property="og:description" content="Full-stack work in C#, ASP.NET Core, Java, Python/Flask, Flutter, and SQL. Current projects: Assetgineer and Texture Resizer.">
+  <meta property="og:title" content="About — Eric Shepard, Jr Software Developer">
+  <meta property="og:description" content="Cincinnati. C#, ASP.NET Core, and SQL. Army veteran. Open to Jr Software Developer roles.">
   <meta property="og:url" content="https://emscode82.github.io/about.html">
   <meta property="og:image" content="https://emscode82.github.io/img/screenshot2.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Canonical + theme -->
   <link rel="canonical" href="https://emscode82.github.io/about.html">
   <meta name="theme-color" content="#0f1216">
 
-  <!-- Assets -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -31,19 +26,19 @@
   <header class="site-header">
     <div class="brand">
       <h1>Eric Shepard</h1>
-      <p>Software Developer</p>
+      <p>Jr Software Developer</p>
       <ul class="meta">
-        <li class="chip">A.A.S. Computer Software Development — Cincinnati State</li>
-        <li class="chip">B.S. Software Application Development - University of Cincinnati </li>
+        <li class="chip">A.A.S. Computer Programming &amp; Database Management (CSD) — Cincinnati State</li>
+        <li class="chip">B.S. Software Application Development — University of Cincinnati (in progress)</li>
       </ul>
     </div>
 
     <div class="header-row">
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="role-junior.html">Roles</a>        
         <a href="projects.html">Projects</a>
         <a href="about.html" class="active link-ux" aria-current="page">About</a>
+        <a href="about.html#contact">Contact</a>
       </nav>
       <a class="btn cta" href="about.html#contact">Contact</a>
     </div>
@@ -51,203 +46,61 @@
 
   <main id="main">
     <div class="container">
-      <!-- Bio -->
       <section class="panel" id="about">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p class="lead">
-          Software developer with an <strong>A.A.S. in Computer Programming &amp; Database Management (Computer Software Development)</strong>,
-          focused on building secure, reliable web apps and APIs with <strong>C#/ASP.NET Core</strong>, <strong>EF Core</strong>,
-          and <strong>SQL Server/MySQL</strong>. Comfortable across the stack (Flutter/Dart, Java/Spring Boot, Python) with
-          hands-on experience in <strong>REST design, authentication/authorization, and database modeling/migrations</strong>.
-          U.S. Army veteran known for discipline, ownership, and problem-solving.
+          Jr Software Developer in Cincinnati. I work in <strong>C#</strong>,
+          <strong>ASP.NET Core</strong>, and <strong>SQL</strong> — web apps, REST APIs,
+          and relational databases. U.S. Army veteran.
         </p>
         <p>
-          Beginning <strong>January 2026</strong> I’ll continue at the <strong>University of Cincinnati</strong> in the
-          <strong>B.S. in Information Technology (Software Application Development)</strong> program (VA VR&amp;E),
-          doubling down on scalable application development, data structures &amp; algorithms, and systems integration.
+          I use Visual Studio, SQL Server Management Studio, and GitHub.
+          Selected work lives on the <a href="projects.html">Projects</a> page.
         </p>
-
-        <h3>Recent Work</h3>
-        <ul>
-          <li>
-            <strong>Texture Resizing Service</strong> — Python/Flask microservice for image/texture processing
-            (resize, crop, format convert, optimize WebP/PNG/JPEG). Exposes REST endpoints with input validation
-            and preset profiles (e.g., 1x/2x/4x); includes a small test UI and cloud deployment.
-            <div class="shot">
-              <a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">
-                <img
-                  src="img/textureresizingservice.png"
-                  alt="Texture Resizer Service UI"
-                  loading="lazy" decoding="async" width="960" height="540">
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <strong>Assetgineer</strong> — AI-powered art generator and asset manager for game teams.
-            It turns high-level concepts into consistent visual assets via a prompt engine that understands
-            races, biomes, architecture, and styles (with negative prompts and one-click randomize).
-            Includes image-to-image + in-painting and a “Prompt Analysis” tree to show how prompts are built.
-            Finished assets land in a versioned library with tags, collections, bulk ops, and the ability to
-            reload any item back into the generator for further iteration.
-            · <a href="assetgineer.html">Details</a>
-            <div class="shot">
-              <a href="https://assetgineer.com" target="_blank" rel="noopener">
-                <img
-                  src="img/assetgineer1.png"
-                  alt="Assetgineer pipeline dashboard (overview)"
-                  loading="lazy" decoding="async" width="960" height="540">
-              </a>
-              <a href="https://assetgineer.com" target="_blank" rel="noopener">
-                <img
-                  src="img/assetgineer2.png"
-                  alt="Assetgineer batch operations screen"
-                  loading="lazy" decoding="async" width="960" height="540">
-              </a>
-              <a href="https://assetgineer.com" target="_blank" rel="noopener">
-                <img
-                  src="img/assetgineer3.png"
-                  alt="Assetgineer output manifest view"
-                  loading="lazy" decoding="async" width="960" height="540">
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <strong>LFG (Looking for Group) Capstone</strong> — Flutter front end with ASP.NET Core Web API + SQL Server:
-            authentication, messaging, event filtering, reviews, and posting system.
-          </li>
-
-          <li>
-            <strong>PREDAQ Program Review System (Co-Op)</strong> — ASP.NET Core + Identity + EF Core:
-            implemented secure workflows (users/roles/claims), normalized schema with migrations, and admin tooling; shipped features in Agile sprints.
-          </li>
-
-          <li>
-            <strong>PRS (Purchase Request System)</strong> — Java/Spring Boot + MySQL:
-            RESTful CRUD with role-based permissions and clean database design.
-          </li>
-        </ul>
-
-        <h3>Strengths</h3>
-        <ul>
-          <li><strong>API &amp; Backend Engineering:</strong> ASP.NET Core with EF Core (code-first migrations, seeding), async/DI, clean REST design, request validation, <em>ProblemDetails</em> style error handling, Swagger/OpenAPI docs.</li>
-          <li><strong>Data &amp; SQL:</strong> relational modeling and normalization, performant queries/joins, indexing and stored procedures; comfortable in SSMS and code-first workflows.</li>
-          <li><strong>Auth &amp; Security:</strong> ASP.NET Core Identity (users/roles/claims), solid password policies, input validation/CORS, OWASP-minded practices.</li>
-          <li><strong>Testing &amp; Quality:</strong> unit/integration testing, Postman collections, structured logging/debug tracing, readable docs/READMEs.</li>
-          <li><strong>Delivery &amp; Tooling:</strong> Git/GitHub flow (branches/PRs), CI basics with GitHub Actions, Docker/local envs, clear release notes and deployment steps; collaborative Agile habits.</li>
-        </ul>
       </section>
 
-      <!-- Current Projects -->
-      <section class="panel">
-        <h2>Current Projects (Functional, In Active Development)</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Assetgineer</h3>
-            <p class="lead">
-              A practical toolchain for preparing and managing creative assets. The goal is fast, repeatable workflows from raw images
-              to production-ready outputs.
-            </p>
-            <p>
-              <strong>Status:</strong> Fully usable today; adding features and refining UX.<br>
-              <strong>Highlights:</strong> batch processing, consistent naming/output structure, hooks for external generators, and
-              integration points for downstream tools (e.g., texture pipelines).
-            </p>
-            <p class="tags">
-              <span class="tag">Python</span><span class="tag">Workflow</span><span class="tag">Automation</span>
-            </p>
-            <p>
-              <a href="https://assetgineer.com" target="_blank" rel="noopener">Assetgineer</a>
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Texture Resizing Service</h3>
-            <p class="lead">
-              Flask image service + library that converts common formats to <em>game-ready, power-of-two textures</em> while preserving transparency.
-            </p>
-            <p>
-              <strong>Status:</strong> Fully functional; continuing to expand API and tests.<br>
-              <strong>Highlights:</strong> power-of-two targets (512–4096), modes <em>fit</em>/<em>crop</em>/<em>stretch</em>,
-              PNG/WebP output, batch ZIP endpoint, health probe, and Docker support. Designed for Unity/Unreal pipelines.
-            </p>
-            <p class="tags">
-              <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Pillow</span><span class="tag">Docker</span>
-            </p>
-            <p>
-              <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section class="panel">
+      <section class="panel" id="education">
         <h2>Education</h2>
         <dl>
-          <dt><strong>University of Cincinnati</strong> — B.S., Software Application Development (Incoming, Jan 2026)</dt>
-          <dd>Planned focus: Enterprise App Dev, Web Server Dev, Mobile Dev, InfoSec, SysAdmin, Senior Design.</dd>
+          <dt><strong>University of Cincinnati</strong> — B.S., Software Application Development (in progress)</dt>
+          <dd>Continuing from the A.A.S. into application development, data, and systems coursework.</dd>
 
-          <dt><strong>Cincinnati State Technical &amp; Community College</strong> — A.A.S., Computer Software Development (Completed)</dt>
-          <dd>Core: C#, ASP.NET Core, Java, Python, SQL Server/MySQL, Web Dev, Systems Analysis &amp; Design, Capstone &amp; Co-Op.</dd>
+          <dt><strong>Cincinnati State Technical &amp; Community College</strong> — A.A.S., Computer Programming &amp; Database Management (CSD) (completed)</dt>
+          <dd>
+            C#, ASP.NET Core, Java, Python, SQL Server/MySQL, web development, systems analysis, capstone, and co-op.
+            School work also included a Java/Spring Boot Purchase Request System (PRS) with MySQL.
+          </dd>
         </dl>
       </section>
 
-      <!-- Independent Projects -->
-      <section class="panel">
-        <h2>Independent Projects</h2>
-        <ul>
-          <li><a href="https://assetgineer.com" target="_blank" rel="noopener">Assetgineer</a> — asset preparation pipeline.</li>
-          <li><a href="https://web-production-ec376.up.railway.app" target="_blank" rel="noopener">Texture Resizer</a> — Flask image service for game-ready textures.</li>
-        </ul>
-        <p class="muted">These projects extend classroom learning into real deployments with cloud hosting, CI/CD, Docker, and API design.</p>
+      <section class="panel" id="experience">
+        <h2>Work experience</h2>
+        <dl>
+          <dt><strong>PREDAQ Program Review System</strong> — Co-op (paid)</dt>
+          <dd>
+            ASP.NET Core, Identity, and EF Core: users, roles, and claims; a normalized schema with migrations;
+            and admin tooling, shipped in Agile sprints.
+          </dd>
+        </dl>
       </section>
 
-      <!-- Skills -->
-      <section class="panel">
-        <h2>Skills</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Languages &amp; Frameworks</h3>
-            <p class="tags">
-              <span class="tag">C#</span><span class="tag">ASP.NET Core</span>
-              <span class="tag">Java</span><span class="tag">Spring (exposure)</span>
-              <span class="tag">Python</span><span class="tag">Flask</span>
-              <span class="tag">Dart/Flutter</span>
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-            </p>
-          </div>
-          <div class="card">
-            <h3>Databases</h3>
-            <p class="tags">
-              <span class="tag">SQL Server</span><span class="tag">MySQL</span>
-              <span class="tag">EF Core</span><span class="tag">Migrations</span>
-              <span class="tag">Schema Design</span>
-            </p>
-          </div>
-          <div class="card">
-            <h3>Platforms &amp; Tools</h3>
-            <p class="tags">
-              <span class="tag">Git/GitHub</span><span class="tag">Postman</span>
-              <span class="tag">Docker</span><span class="tag">VS/VS Code</span>
-              <span class="tag">CI (GitHub Actions)</span><span class="tag">Linux/Nginx</span>
-              <span class="tag">Railway</span><span class="tag">Custom Domain Deployments</span>
-            </p>
-          </div>
-          <div class="card">
-            <h3>Focus Areas</h3>
-            <p class="tags">
-              <span class="tag">Full-Stack</span><span class="tag">REST APIs</span>
-              <span class="tag">Auth &amp; Roles</span><span class="tag">Testing</span>
-              <span class="tag">UX/HCI</span><span class="tag">Security Basics</span>
-              <span class="tag">Asset Pipelines</span><span class="tag">Game-Ready Texture Prep</span>
-            </p>
-          </div>
-        </div>
+      <section class="panel" id="skills">
+        <h2>Skills I actually use</h2>
+        <p class="tags">
+          <span class="tag">C#</span>
+          <span class="tag">ASP.NET Core</span>
+          <span class="tag">EF Core</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Git / GitHub</span>
+        </p>
       </section>
 
-      <!-- Contact / Resume -->
       <section class="panel" id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:emshepard721@gmail.com">emshepard721@gmail.com</a></p>
@@ -255,24 +108,29 @@
           LinkedIn: <a href="https://www.linkedin.com/in/eric-shepard-softwaredev" target="_blank" rel="noopener">/eric-shepard-softwaredev</a>
           · GitHub: <a href="https://github.com/EmsCode82" target="_blank" rel="noopener">@EmsCode82</a>
         </p>
-        <p class="muted">Résumé available upon request.</p>
+        <p class="muted">Résumé available upon request. Open to Jr Software Developer roles.</p>
       </section>
     </div>
   </main>
 
   <footer>
-    <p>Open to Software Developer roles — <a href="about.html#contact">Contact</a></p>
-    <p>© 2025 Eric Shepard</p>
+    <p>Open to Jr Software Developer roles — <a href="about.html#contact">Contact</a></p>
+    <p>© 2026 Eric Shepard</p>
   </footer>
 
-  <!-- Structured data (Person + Site) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Eric Shepard",
-    "jobTitle": "Software Developer",
+    "jobTitle": "Jr Software Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cincinnati",
+      "addressRegion": "OH"
+    },
     "url": "https://emscode82.github.io",
+    "email": "emshepard721@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/in/eric-shepard-softwaredev",
       "https://github.com/EmsCode82"

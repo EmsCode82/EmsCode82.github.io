@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Shepard — Software Developer Portfolio</title>
+  <title>Eric Shepard — Jr Software Developer</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Portfolio of Eric Shepard (A.A.S. CSD; incoming UC B.S.). Full-stack projects in C#, ASP.NET Core, Java, Python/Flask, Flutter, and SQL.">
+  <meta name="description" content="Eric Shepard, Jr Software Developer in Cincinnati. C#, ASP.NET Core, and SQL. A.A.S. completed; B.S. Software Application Development in progress at the University of Cincinnati.">
 
-  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Eric Shepard — Software Developer Portfolio">
-  <meta property="og:description" content="Full-stack projects in C#, ASP.NET Core, Java, Python/Flask, Flutter, and SQL.">
+  <meta property="og:title" content="Eric Shepard — Jr Software Developer">
+  <meta property="og:description" content="Cincinnati. C#, ASP.NET Core, and SQL. Selected work: Assetgineer, Texture Resizer, and an LFG capstone API.">
   <meta property="og:url" content="https://emscode82.github.io/index.html">
   <meta property="og:image" content="https://emscode82.github.io/img/screenshot.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Canonical + theme -->
   <link rel="canonical" href="https://emscode82.github.io/index.html">
   <meta name="theme-color" content="#0f1216">
 
-  <!-- Performance + assets -->
   <link rel="preload" as="image" href="img/assetgineer6.png" imagesrcset="img/assetgineer6.png">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
-
-  <!-- Page-local layout for the two-column intro -->
-  <style>
-    .intro-grid {
-      display: grid;
-      grid-template-columns: minmax(320px, 560px) 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-    @media (max-width: 1000px) {
-      .intro-grid { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 
 <body class="theme-glass bg-fancy">
@@ -46,82 +28,62 @@
   <header class="site-header">
     <div class="brand">
       <h1>Eric Shepard</h1>
-      <p>Software Developer</p>
+      <p>Jr Software Developer</p>
       <ul class="meta">
-        <li class="chip">A.A.S. Computer Software Development — Cincinnati State</li>
-        <li class="chip">B.S. Software Application Development - University of Cincinnati </li>
+        <li class="chip">A.A.S. Computer Programming &amp; Database Management (CSD) — Cincinnati State</li>
+        <li class="chip">B.S. Software Application Development — University of Cincinnati (in progress)</li>
       </ul>
     </div>
 
     <div class="header-row">
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" class="active link-ux" aria-current="page">Home</a>        
-        <a href="role-junior.html">Roles</a>
+        <a href="index.html" class="active link-ux" aria-current="page">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
       </nav>
       <a class="btn cta" href="about.html#contact">Contact</a>
     </div>
   </header>
 
   <main id="main">
-    <!-- Two-column intro: summary (left) + hero (right) -->
     <div class="container-wide">
       <div class="intro-grid">
         <section class="panel" id="summary">
-          <h2>Software Application Developer</h2>
+          <h2>Jr Software Developer</h2>
 
           <ul class="meta">
-              <li class="chip">Backend: ASP.NET Core · REST APIs · EF Core</li>
-              <li class="chip">Databases: SQL Server · MySQL · Relational Modeling</li>
-              <li class="chip">Languages: C# · Java · Python · JavaScript</li>
-              <li class="chip">Version Control: Git · GitHub</li>
+            <li class="chip">Cincinnati</li>
+            <li class="chip">C# · ASP.NET Core · SQL</li>
+            <li class="chip">Git · GitHub</li>
           </ul>
 
           <p class="lead">
-              I build clean, data-driven web applications and APIs. I earned an
-              <strong>A.A.S. in Computer Programming &amp; Database Management</strong> from Cincinnati State
-              and I’m currently pursuing a <strong>B.S. in Software Application Development</strong> at the
-              University of Cincinnati.
+            I’m Eric Shepard, a Jr Software Developer in Cincinnati. I write
+            <strong>C#</strong> and <strong>ASP.NET Core</strong> web apps and APIs,
+            and I model data in <strong>SQL Server</strong> and MySQL.
           </p>
-
           <p>
-              I specialize in backend development with <strong>ASP.NET Core</strong>, designing
-              <strong>RESTful APIs</strong>, modeling relational databases, and implementing secure
-              <strong>authentication and role-based access control</strong>. I prioritize clean architecture,
-              iterative development, and production-ready systems. My daily tools include 
-              <strong>Visual Studio 2022</strong>, <strong>SQL Server Management Studio (SSMS)</strong>, and <strong>GitHub</strong>.
+            I finished an <strong>A.A.S. in Computer Programming &amp; Database Management</strong>
+            at Cincinnati State and I’m now in the
+            <strong>B.S. in Software Application Development</strong> program at the
+            University of Cincinnati. Day to day that looks like controllers, EF Core,
+            relational schemas, and Git.
           </p>
 
+          <!--
+            NOW BUILDING — single slot.
+            Replace the #now-building card when an active project starts.
+          -->
           <h3>Now building</h3>
-          <ul>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-          </ul>
-
-          <h3>Selected work</h3>
-          <ul>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-            <li>
-              
-            </li>
-          </ul>
-
-          <h3>Next steps</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <article class="card" id="now-building">
+            <h3>This portfolio</h3>
+            <span class="badge badge-progress">Now</span>
+            <p>
+              I’m rebuilding this site so it only shows finished work.
+              When I start the next project, this card is the place I’ll update.
+            </p>
+          </article>
         </section>
 
         <figure class="shot hero">
@@ -132,62 +94,61 @@
             height="540"
             decoding="async"
             fetchpriority="high">
-          <figcaption>Created using Assetgineer</figcaption>
+          <figcaption>Assetgineer — live at assetgineer.com</figcaption>
         </figure>
       </div>
     </div>
 
-    <!-- Roadmap / objective panel (kept below; constrained width) -->
     <div class="container">
-      <section class="panel edu-block" id="focus">
-        <h3>Current Objective</h3>
-        <p class="lead">
-          <strong>Primary:</strong> ship portfolio polish that reads like a professional product site.
-          <strong>Secondary:</strong> 
+      <section class="panel" id="selected-work">
+        <h2>Selected work</h2>
+        <p class="lead">Three things I can show today. Status is Live or GitHub — nothing in between.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3><a href="assetgineer.html">Assetgineer</a></h3>
+            <span class="badge badge-live">Live</span>
+            <p>AI-assisted game-art generator and asset library. Prompt controls, collections, and versioned outputs.</p>
+            <p>
+              <a href="https://assetgineer.com" target="_blank" rel="noopener">Live site</a>
+              <span class="sep">·</span>
+              <a href="assetgineer.html">Case study</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Texture Resizer</h3>
+            <span class="badge badge-github">GitHub</span>
+            <p>Flask service that turns images into power-of-two game textures. Real code; not currently deployed.</p>
+            <p>
+              <a href="https://github.com/EmsCode82/texture-resizer" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>LFG capstone API</h3>
+            <span class="badge badge-github">GitHub</span>
+            <p>School capstone: ASP.NET Core API with JWT, posts, chat, and reviews. GitHub only — no live app.</p>
+            <p>
+              <a href="https://github.com/EmsCode82/LFGAppAPI" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="home-contact">
+        <h2>Contact</h2>
+        <p>Open to Jr Software Developer roles in Cincinnati and remote.</p>
+        <p>
+          <a class="btn cta" href="about.html#contact">Get in touch</a>
         </p>
-
-        <ul class="meta">
-          <li class="chip"></li>
-          <li class="chip"></li>
-          <li class="chip"></li>
-        </ul>
-
-        <details open>
-          <summary>Primary — Portfolio improvements</summary>
-          <ul>
-            <li><strong></strong></li>
-            <li><strong></strong></li>
-            <li><em></em></li>
-            <li><em></em></li>
-            <li><em></em></li>
-          </ul>
-        </details>
-
-        <details>
-          <summary></summary>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <p></p>
-        </details>
-
-        <details>
-          <summary></summary>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
-        </details>
       </section>
     </div>
   </main>
 
   <footer>
-    <p>Open to Software Developer roles — <a href="about.html#contact">Contact</a></p>
-    <p>© 2025 Eric Shepard</p>
+    <p>Open to Jr Software Developer roles — <a href="about.html#contact">Contact</a></p>
+    <p>© 2026 Eric Shepard</p>
   </footer>
 </body>
 </html>
