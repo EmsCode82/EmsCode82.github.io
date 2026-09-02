@@ -458,7 +458,7 @@ footer{
 .panel { margin: 20px 0; }    /* was likely ~12–16px */
 
 /* -----------------------------
-   CSD Core Lab — lesson reading
+   Lab — lesson reading
 --------------------------------*/
 .lesson-kicker{
   margin:0 0 .35rem;
@@ -472,6 +472,10 @@ footer{
   margin:-.35rem 0 1rem;
   color:var(--muted);
   font-size:.95rem;
+  font-weight:600;
+}
+.card .lesson-meta{
+  margin:.15rem 0 .75rem;
 }
 .lesson h3{
   margin-top:1.5rem;
@@ -558,15 +562,37 @@ footer{
 }
 
 .try-this{
-  border:1px solid rgba(90,169,230,.35);
-  border-left:4px solid var(--accent);
+  border:1px solid rgba(90,169,230,.45);
+  border-left:6px solid var(--accent);
   border-radius:12px;
-  background:rgba(22,48,68,.35);
-  padding:1rem 1.1rem;
+  background:rgba(22,48,68,.5);
+  padding:1.25rem 1.25rem 1.15rem;
   margin: .5rem 0 1.25rem;
 }
 .try-this > p:first-child{ margin-top:0; }
 .try-this > :last-child{ margin-bottom:0; }
+.try-this-kicker{
+  margin:0 0 .35rem;
+  color:var(--accent);
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.try-this-lead{
+  font-size:1.15rem;
+  line-height:1.5;
+  color:var(--text);
+  margin:.25rem 0 1rem;
+}
+.try-this-actions{
+  margin:0 0 1rem;
+}
+.try-this-btn{
+  display:inline-flex;
+  font-size:1.05rem;
+  padding:.7rem 1.15rem;
+}
 
 @media (max-width:700px){
   .lesson-table{ font-size:.9rem; }
