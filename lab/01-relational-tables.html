@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relational tables and primary keys — CSD Core Lab — Eric Shepard</title>
+
+  <meta name="description" content="Lesson 1 of Eric Shepard’s CSD Core Lab: what a relational table is, why business data uses tables, and how a primary key uniquely identifies one row. Jr Software Developer.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Relational tables and primary keys — CSD Core Lab">
+  <meta property="og:description" content="Rows, columns, and why CustomerId — not a name or email — is the primary key. A short CSD lesson by Eric Shepard, Jr Software Developer.">
+  <meta property="og:url" content="https://emscode82.github.io/lab/01-relational-tables.html">
+  <meta property="og:image" content="https://emscode82.github.io/img/customers-primary-key.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://emscode82.github.io/lab/01-relational-tables.html">
+  <meta name="theme-color" content="#0f1216">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+<body class="theme-glass bg-fancy">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Eric Shepard</h1>
+      <p>Jr Software Developer</p>
+      <ul class="meta">
+        <li class="chip">A.A.S. Computer Programming &amp; Database Management (CSD) — Cincinnati State</li>
+        <li class="chip">B.S. Software Application Development — University of Cincinnati (in progress)</li>
+      </ul>
+    </div>
+
+    <div class="header-row">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../lab.html" class="active link-ux" aria-current="page">Lab</a>
+        <a href="../about.html">About</a>
+      </nav>
+      <a class="btn cta" href="../about.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article class="panel lesson">
+        <p class="lesson-kicker"><a href="../lab.html">CSD Core Lab</a> · Lesson 1</p>
+        <h2>Relational tables and primary keys</h2>
+        <p class="lesson-meta">Eric Shepard · Jr Software Developer · about one sitting</p>
+
+        <p class="lead">
+          If you are starting a Cincinnati State–style CPDM / CSD program, or you
+          are new to SQL at a junior job, this is the first idea to lock in:
+          business data lives in tables, and each row needs a stable primary key.
+        </p>
+
+        <nav class="toc" aria-label="On this page">
+          <strong>On this page:</strong>
+          <a href="#what-is-a-table">Tables</a> ·
+          <a href="#why-tables">Why tables</a> ·
+          <a href="#primary-key">Primary keys</a> ·
+          <a href="#example">Example</a> ·
+          <a href="#mistake">A common mistake</a> ·
+          <a href="#try-this">Try this</a> ·
+          <a href="#check">Check yourself</a>
+        </nav>
+
+        <h3 id="what-is-a-table">What a table is</h3>
+        <p>
+          A table is a grid of facts about one kind of thing. In this lesson that
+          thing is a customer. Later it might be an order, a course, or a product.
+        </p>
+        <ul>
+          <li><strong>A row is a record</strong> — one customer, complete enough to treat as a single item.</li>
+          <li><strong>A column is a field</strong> — one kind of fact you store for every record, such as last name or email.</li>
+        </ul>
+        <p>
+          A spreadsheet is a useful picture. A database table is stricter: columns
+          have names, each cell in a column holds the same kind of value, and the
+          database can refuse a row that breaks a rule (empty where a value is
+          required, or a duplicate where uniqueness is required).
+        </p>
+
+        <h3 id="why-tables">Why business data uses tables</h3>
+        <p>
+          A shop, clinic, or school does not keep one long paragraph of facts.
+          They keep the <em>same</em> facts, the <em>same</em> way, for many people
+          and many events. Tables make that repeatable.
+        </p>
+        <p>
+          With a table you can find one customer without rereading a whole file.
+          You can sort, count, and filter. Later you can connect other tables
+          (orders, payments, tickets) back to the same customer. More than one
+          program can read the same structure. That is why CSD coursework starts
+          here instead of with a pile of unlabelled notes.
+        </p>
+
+        <h3 id="primary-key">Primary key: one row, one identity</h3>
+        <p>
+          A <strong>primary key</strong> is the column (or a small set of columns)
+          that uniquely identifies one row. In this lesson it is a single column:
+          <code>CustomerId</code>.
+        </p>
+        <p>Three rules to keep:</p>
+        <ol>
+          <li><strong>Unique.</strong> No two rows share the same key. Customer 101 is only Maya Chen in this table.</li>
+          <li><strong>Not null.</strong> Every row has a key. An empty identifier is not a row you can find again.</li>
+          <li><strong>Stable.</strong> The key should not change because the person changed their email or last name. Identity stays put; contact details can move.</li>
+        </ol>
+        <p>
+          Use <code>CustomerId</code>, not the customer’s name. Names repeat.
+          People change spelling, get married, or share a name with someone else.
+          A number (or another assigned identifier) is a handle the database owns.
+        </p>
+
+        <h3 id="example">A small Customers table</h3>
+        <p>
+          Here is a tiny worked example. Four columns. Three rows. Look at the
+          first column — that is the primary key.
+        </p>
+
+        <figure class="lesson-figure" aria-labelledby="fig-customers-caption">
+          <img
+            src="../img/customers-primary-key.svg"
+            alt="Diagram of a Customers table. Columns are labeled as fields and rows as records. The CustomerId column is highlighted as the primary key, with sample rows 101 Maya Chen, 102 Jordan Ortiz, and 103 Priya Shah."
+            width="820"
+            height="480"
+            decoding="async">
+          <figcaption id="fig-customers-caption">
+            Look at the highlighted <strong>CustomerId</strong> column first. Each
+            value (101, 102, 103) points to exactly one row. The other columns are
+            facts about that customer; they are not the identity of the row.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-table-wrap">
+          <table class="lesson-table">
+            <caption>Customers — sample data used in the diagram</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="pk">CustomerId (PK)</th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="pk">101</th>
+                <td>Maya</td>
+                <td>Chen</td>
+                <td>maya.chen@example.com</td>
+              </tr>
+              <tr>
+                <th scope="row" class="pk">102</th>
+                <td>Jordan</td>
+                <td>Ortiz</td>
+                <td>jordan.ortiz@example.com</td>
+              </tr>
+              <tr>
+                <th scope="row" class="pk">103</th>
+                <td>Priya</td>
+                <td>Shah</td>
+                <td>priya.shah@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          If Maya changes her email tomorrow, row 101 is still Maya. The key did
+          not move. That is the point of a stable identifier.
+        </p>
+        <p>
+          In SQL the same idea looks like this. You do not need to run it to
+          understand the lesson; it is the table above written as a definition.
+        </p>
+        <pre><code>CREATE TABLE Customers (
+  CustomerId INT         NOT NULL,
+  FirstName  VARCHAR(50) NOT NULL,
+  LastName   VARCHAR(50) NOT NULL,
+  Email      VARCHAR(100),
+  PRIMARY KEY (CustomerId)
+);</code></pre>
+
+        <h3 id="mistake">A common mistake: a changeable field as the only identifier</h3>
+        <p>
+          Beginners sometimes use email, or first name plus last name, as the
+          “id” because those values look unique today. That breaks as soon as
+          real life happens.
+        </p>
+        <ul>
+          <li>Two customers can share a name. “Jordan Ortiz” is not unique in the world.</li>
+          <li>Email addresses get replaced. If email is the key, every related order, ticket, or payment that pointed at the old email now points at nothing — or at the wrong person if the address is reused.</li>
+          <li>People correct typos in their own names. A key that changes is not a key; it is a field you edit.</li>
+        </ul>
+        <p>
+          Keep email and name as ordinary columns. Let <code>CustomerId</code> be
+          the identity. Other tables can store that id when they need to say
+          “this order belongs to that customer.”
+        </p>
+
+        <h3 id="try-this">Try this</h3>
+        <div class="try-this">
+          <p>
+            Invent an <strong>Orders</strong> table for the same shop. Do this on
+            paper or in any SQL tool you already have. You do not need a server
+            for the thinking.
+          </p>
+          <ol>
+            <li>List at least four columns. Include an order identifier, a way to know which customer placed it, an order date, and a total.</li>
+            <li>Mark the primary key. Write one sentence: why that column (or those columns), and why the order date alone is not enough.</li>
+            <li>Add two sample rows. Make sure the customer values could match someone in the Customers table above.</li>
+          </ol>
+          <p class="muted">
+            Hint: the order’s own id is usually the primary key. The customer
+            belongs in the row as a separate column, not as the order’s identity.
+          </p>
+        </div>
+
+        <h3 id="check">Check yourself</h3>
+        <p>Answer these before you open the notes below.</p>
+        <ol>
+          <li>In a table, what is a row? What is a column?</li>
+          <li>Why is <code>CustomerId</code> a better primary key than <code>LastName</code>?</li>
+          <li>Can a primary key be empty? Why or why not?</li>
+          <li>Maya Chen changes her email. Should her <code>CustomerId</code> change?</li>
+        </ol>
+
+        <div class="edu-block">
+          <details>
+            <summary>Short answers</summary>
+            <ol>
+              <li>A row is one record (one customer). A column is one field (one kind of fact stored for every record).</li>
+              <li>Last names repeat and can change. <code>CustomerId</code> is assigned, unique, and stable, so it still identifies the same person after a name or email update.</li>
+              <li>No. A primary key cannot be null. If the identifier is missing, you cannot tell which row you mean.</li>
+              <li>No. The email column changes. The key stays 101 so anything that already points at Maya still finds her.</li>
+            </ol>
+          </details>
+        </div>
+
+        <p>
+          <a href="../lab.html">← Lab home</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Open to Jr Software Developer roles — <a href="../about.html#contact">Contact</a></p>
+    <p>© 2026 Eric Shepard</p>
+  </footer>
+</body>
+</html>
