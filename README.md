@@ -10,10 +10,11 @@ Open to Jr Software Developer roles.
 
 ## Pages
 
-- `index.html` — Home (who I am, Now building = CSD Core Lab, three real projects)
+- `index.html` — Home (who I am, Now building = Lab, three real projects)
 - `projects.html` — Assetgineer, Texture Resizer, LFG capstone API
-- `lab.html` — CSD Core Lab (finished lessons only)
+- `lab.html` — Lab (finished lessons only)
 - `lab/01-relational-tables.html` — Lesson 1: relational tables and primary keys
+- `lab/02-how-programs-think.html` — Lesson 2: how programs think
 - `about.html` — Bio, education, co-op, contact
 - `assetgineer.html` — Assetgineer case study
 - `style.css` — Shared theme (glass / dark)
@@ -28,11 +29,12 @@ No build step. Clone and open `index.html`, or let GitHub Pages serve the root.
 - **Texture Resizer** — GitHub only (not currently deployed): https://github.com/EmsCode82/texture-resizer
 - **LFG capstone API** — GitHub only: https://github.com/EmsCode82/LFGAppAPI
 
-## CSD Core Lab
+## Lab
 
-Instructional pages for core CPDM/CSD ideas. Only finished lessons are listed.
+Short lessons on junior-level software development fundamentals. Only finished lessons are listed.
 
 - **Lesson 1** — Relational tables and primary keys: https://emscode82.github.io/lab/01-relational-tables.html
+- **Lesson 2** — How programs think: https://emscode82.github.io/lab/02-how-programs-think.html
 
 ---
 
