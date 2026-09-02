@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Customers table with CustomerId marked as the primary key</title>
+  <desc id="svg-desc">A four-column Customers table. Columns (fields) are CustomerId, FirstName, LastName, and Email. The CustomerId column is highlighted as PRIMARY KEY. Three rows (records) show customers 101 Maya Chen, 102 Jordan Ortiz, and 103 Priya Shah.</desc>
+
+  <rect width="820" height="480" rx="12" fill="#141922"/>
+  <rect x="0.5" y="0.5" width="819" height="479" rx="11.5" fill="none" stroke="#242a33"/>
+
+  <!-- Column label -->
+  <text x="430" y="32" text-anchor="middle" fill="#8bd3ff" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Columns (fields)</text>
+  <path d="M96 44 H764" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+  <path d="M96 44 V54" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+  <path d="M764 44 V54" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+
+  <!-- Row label -->
+  <text transform="translate(22 250) rotate(-90)" text-anchor="middle" fill="#8bd3ff" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Rows (records)</text>
+  <path d="M42 86 V360" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+  <path d="M42 86 H52" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+  <path d="M42 360 H52" fill="none" stroke="#5aa9e6" stroke-width="1.25"/>
+
+  <text x="96" y="76" fill="#bac6d3" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Table: Customers</text>
+
+  <!-- PK column fill -->
+  <rect x="78" y="86" width="156" height="274" fill="#163044"/>
+
+  <!-- Header fills -->
+  <rect x="234" y="86" width="176" height="50" fill="#1a2430"/>
+  <rect x="410" y="86" width="156" height="50" fill="#1a2430"/>
+  <rect x="566" y="86" width="198" height="50" fill="#1a2430"/>
+  <rect x="78" y="86" width="156" height="50" fill="#1d3a52"/>
+
+  <!-- Body fills (non-PK) -->
+  <rect x="234" y="136" width="530" height="224" fill="#171b21"/>
+
+  <!-- Grid -->
+  <path d="M78 136 H764 M78 210 H764 M78 284 H764 M234 86 V360 M410 86 V360 M566 86 V360" fill="none" stroke="#3a4a5c" stroke-width="1"/>
+  <rect x="78" y="86" width="686" height="274" fill="none" stroke="#3a4a5c" stroke-width="1.5"/>
+  <rect x="78" y="86" width="156" height="274" fill="none" stroke="#5aa9e6" stroke-width="2.25"/>
+
+  <!-- Header text -->
+  <text x="156" y="106" text-anchor="middle" fill="#b9e6ff" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">CustomerId</text>
+  <text x="156" y="124" text-anchor="middle" fill="#5aa9e6" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700">PRIMARY KEY</text>
+  <text x="322" y="116" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">FirstName</text>
+  <text x="488" y="116" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">LastName</text>
+  <text x="665" y="116" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Email</text>
+
+  <!-- Row 1 -->
+  <text x="156" y="180" text-anchor="middle" fill="#8bd3ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700">101</text>
+  <text x="322" y="180" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Maya</text>
+  <text x="488" y="180" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Chen</text>
+  <text x="665" y="180" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">maya.chen@example.com</text>
+
+  <!-- Row 2 -->
+  <text x="156" y="254" text-anchor="middle" fill="#8bd3ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700">102</text>
+  <text x="322" y="254" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Jordan</text>
+  <text x="488" y="254" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Ortiz</text>
+  <text x="665" y="254" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">jordan.ortiz@example.com</text>
+
+  <!-- Row 3 -->
+  <text x="156" y="328" text-anchor="middle" fill="#8bd3ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700">103</text>
+  <text x="322" y="328" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Priya</text>
+  <text x="488" y="328" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Shah</text>
+  <text x="665" y="328" text-anchor="middle" fill="#f0f5fa" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">priya.shah@example.com</text>
+
+  <!-- Callout under PK -->
+  <path d="M156 360 V378" fill="none" stroke="#5aa9e6" stroke-width="1.5"/>
+  <circle cx="156" cy="360" r="3" fill="#5aa9e6"/>
+  <text x="410" y="400" text-anchor="middle" fill="#8bd3ff" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">CustomerId uniquely identifies one row — not empty, and it does not change</text>
+  <text x="410" y="424" text-anchor="middle" fill="#bac6d3" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Each row is one customer. Each column is one kind of fact about every customer.</text>
+  <text x="410" y="448" text-anchor="middle" fill="#bac6d3" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">A name or email can change. The primary key stays with the same person.</text>
+</svg>
