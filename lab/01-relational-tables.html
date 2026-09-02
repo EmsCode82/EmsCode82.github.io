@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relational tables and primary keys — CSD Core Lab — Eric Shepard</title>
+  <title>Relational tables and primary keys — Lab</title>
 
-  <meta name="description" content="Lesson 1 of Eric Shepard’s CSD Core Lab: what a relational table is, why business data uses tables, and how a primary key uniquely identifies one row. Jr Software Developer.">
+  <meta name="description" content="Lesson 1: what a relational table is, why business data uses tables, and how a primary key uniquely identifies one row. Hard skill with a hands-on activity in a companion GitHub project.">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Relational tables and primary keys — CSD Core Lab">
-  <meta property="og:description" content="Rows, columns, and why CustomerId — not a name or email — is the primary key. A short CSD lesson by Eric Shepard, Jr Software Developer.">
+  <meta property="og:title" content="Relational tables and primary keys — Lab">
+  <meta property="og:description" content="Rows, columns, and why CustomerId — not a name or email — is the primary key. Then design an Orders table in the companion GitHub project.">
   <meta property="og:url" content="https://emscode82.github.io/lab/01-relational-tables.html">
   <meta property="og:image" content="https://emscode82.github.io/img/customers-primary-key.svg">
   <meta name="twitter:card" content="summary_large_image">
@@ -47,14 +47,20 @@
   <main id="main">
     <div class="container">
       <article class="panel lesson">
-        <p class="lesson-kicker"><a href="../lab.html">CSD Core Lab</a> · Lesson 1</p>
+        <p class="lesson-kicker"><a href="../lab.html">Lab</a> · Lesson 1</p>
         <h2>Relational tables and primary keys</h2>
-        <p class="lesson-meta">Eric Shepard · Jr Software Developer · about one sitting</p>
+        <p class="lesson-meta">Hard skill · Relational data · Activity included</p>
 
         <p class="lead">
-          If you are starting a Cincinnati State–style CPDM / CSD program, or you
-          are new to SQL at a junior job, this is the first idea to lock in:
-          business data lives in tables, and each row needs a stable primary key.
+          If you are beginning to learn software development, this is a first
+          hard skill to lock in: business data lives in tables, and each row
+          needs a stable primary key.
+        </p>
+        <p>
+          Reading is not the finish line. After the example, you will
+          <strong>complete an activity</strong> that demonstrates the skill:
+          design an Orders table in the
+          <a href="https://github.com/EmsCode82/csd-lab-01-relational-tables" target="_blank" rel="noopener noreferrer">companion GitHub project</a>.
         </p>
 
         <nav class="toc" aria-label="On this page">
@@ -94,7 +100,7 @@
           With a table you can find one customer without rereading a whole file.
           You can sort, count, and filter. Later you can connect other tables
           (orders, payments, tickets) back to the same customer. More than one
-          program can read the same structure. That is why CSD coursework starts
+          program can read the same structure. That is why this Lab starts
           here instead of with a pile of unlabelled notes.
         </p>
 
@@ -205,10 +211,19 @@
 
         <h3 id="try-this">Try this</h3>
         <div class="try-this">
+          <p class="try-this-kicker">Your turn — complete the activity</p>
+          <p class="try-this-lead">
+            Demonstrate the skill. Design an <strong>Orders</strong> table for the
+            same shop, with a real primary key. Do the work in the companion
+            GitHub project so you finish with something you can show.
+          </p>
+          <p class="try-this-actions">
+            <a class="btn try-this-btn" href="https://github.com/EmsCode82/csd-lab-01-relational-tables" target="_blank" rel="noopener noreferrer">Open the companion GitHub project</a>
+          </p>
           <p>
-            Invent an <strong>Orders</strong> table for the same shop. Do this on
-            paper or in any SQL tool you already have. You do not need a server
-            for the thinking.
+            Fork the repo (or clone it and work in your own copy). Put your
+            completed table there — a <code>CREATE TABLE</code> definition and
+            sample rows is enough. That artifact is the point of this lesson.
           </p>
           <ol>
             <li>List at least four columns. Include an order identifier, a way to know which customer placed it, an order date, and a total.</li>
@@ -241,6 +256,13 @@
             </ol>
           </details>
         </div>
+
+        <p>
+          If you have not yet put an Orders table in the
+          <a href="https://github.com/EmsCode82/csd-lab-01-relational-tables" target="_blank" rel="noopener noreferrer">companion project</a>,
+          go back to <a href="#try-this">Try this</a> and finish that before you
+          leave the lesson.
+        </p>
 
         <p>
           <a href="../lab.html">← Lab home</a>
