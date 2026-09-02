@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How programs think — Lab</title>
+
+  <meta name="description" content="Lesson 2: every useful program is inputs, steps, and decisions — and often outputs. A junior principle with a free-shipping example, a flowchart, and a hands-on activity in a companion GitHub project.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How programs think — Lab">
+  <meta property="og:description" content="Name the inputs, steps, and decisions before you write code. Then complete the activity in the companion GitHub project.">
+  <meta property="og:url" content="https://emscode82.github.io/lab/02-how-programs-think.html">
+  <meta property="og:image" content="https://emscode82.github.io/img/how-programs-think.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://emscode82.github.io/lab/02-how-programs-think.html">
+  <meta name="theme-color" content="#0f1216">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+<body class="theme-glass bg-fancy">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Eric Shepard</h1>
+      <p>Jr Software Developer</p>
+      <ul class="meta">
+        <li class="chip">A.A.S. Computer Programming &amp; Database Management (CSD) — Cincinnati State</li>
+        <li class="chip">B.S. Software Application Development — University of Cincinnati (in progress)</li>
+      </ul>
+    </div>
+
+    <div class="header-row">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../lab.html" class="active link-ux" aria-current="page">Lab</a>
+        <a href="../about.html">About</a>
+      </nav>
+      <a class="btn cta" href="../about.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article class="panel lesson">
+        <p class="lesson-kicker"><a href="../lab.html">Lab</a> · Lesson 2</p>
+        <h2>How programs think</h2>
+        <p class="lesson-meta">Principle · Problem decomposition · Activity included</p>
+
+        <p class="lead">
+          If you are beginning to learn software development, this is a first
+          principle to lock in: every useful program is <strong>inputs</strong>,
+          then <strong>steps</strong>, then <strong>decisions</strong> — and
+          often <strong>outputs</strong>.
+        </p>
+        <p>
+          Reading is not the finish line. After the example, you will
+          <strong>complete an activity</strong> that demonstrates the principle:
+          name the inputs, steps, and decisions for a new problem in the
+          <a href="https://github.com/EmsCode82/csd-lab-02-how-programs-think" target="_blank" rel="noopener noreferrer">companion GitHub project</a>.
+        </p>
+
+        <nav class="toc" aria-label="On this page">
+          <strong>On this page:</strong>
+          <a href="#the-idea">The idea</a> ·
+          <a href="#diagram">Diagram</a> ·
+          <a href="#example">Example</a> ·
+          <a href="#mistake">A common mistake</a> ·
+          <a href="#try-this">Try this</a> ·
+          <a href="#check">Check yourself</a>
+        </nav>
+
+        <h3 id="the-idea">Inputs, steps, decisions</h3>
+        <p>
+          A program does not “just run.” It takes facts in, does work with them,
+          and chooses a path. If you can name those parts in plain language, you
+          can write the code later. If you cannot name them, the code will be a
+          guess.
+        </p>
+        <ul>
+          <li><strong>Inputs</strong> are the facts the program needs. A dollar amount. An age. A yes-or-no flag. Something you can write down before any syntax.</li>
+          <li><strong>Steps</strong> are the work: compare, add, look up, copy, format. One thing at a time.</li>
+          <li><strong>Decisions</strong> are questions with a clear yes or no (or a small set of answers). The answer picks the next path.</li>
+          <li><strong>Outputs</strong> are what you hand back: a message, a price, a saved record, a screen. Many useful programs have them. Some only change something and stop.</li>
+        </ul>
+        <p>
+          That is the whole shape. Languages change. This shape does not.
+        </p>
+
+        <h3 id="diagram">One picture of the shape</h3>
+        <p>
+          Here is that shape as a flowchart. Follow it top to bottom. Ovals
+          start and end. The slanted box is an input. The rectangle is a step.
+          The diamond is a decision. The two slanted boxes at the bottom are
+          outputs.
+        </p>
+
+        <figure class="lesson-figure" aria-labelledby="fig-think-caption">
+          <img
+            src="../img/how-programs-think.svg"
+            alt="Flowchart of a free-shipping program. Start, then input the order total, then compare it to 50 dollars, then decide: if the total is 50 dollars or more, output free shipping; otherwise output charge shipping. Both paths end."
+            width="820"
+            height="760"
+            decoding="async">
+          <figcaption id="fig-think-caption">
+            Read the diamond first: <strong>Is the total $50 or more?</strong>
+            Everything above it prepares that question. Everything below it is
+            the answer you give back.
+          </figcaption>
+        </figure>
+
+        <h3 id="example">A tiny worked example: free shipping</h3>
+        <p>
+          A shop gives free shipping when an order is $50 or more. Before any
+          code, name the parts.
+        </p>
+        <ul>
+          <li><strong>Input:</strong> the order total, in dollars.</li>
+          <li><strong>Step:</strong> compare that total to 50.</li>
+          <li><strong>Decision:</strong> is the total $50 or more?</li>
+          <li><strong>Outputs:</strong> “free shipping” or “charge shipping.”</li>
+        </ul>
+        <p>
+          Two sample orders. Same thinking, different answers.
+        </p>
+
+        <div class="lesson-table-wrap">
+          <table class="lesson-table">
+            <caption>Free shipping — two walkthroughs of the same decision</caption>
+            <thead>
+              <tr>
+                <th scope="col">Order total (input)</th>
+                <th scope="col">Step</th>
+                <th scope="col">Decision: $50 or more?</th>
+                <th scope="col">Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">$72</th>
+                <td>Compare 72 to 50</td>
+                <td>Yes</td>
+                <td>Free shipping</td>
+              </tr>
+              <tr>
+                <th scope="row">$28</th>
+                <td>Compare 28 to 50</td>
+                <td>No</td>
+                <td>Charge shipping</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          You could write this in any language. The program is not the
+          <code>if</code>. The program is the named input, the comparison, the
+          yes-or-no question, and the two outputs. The <code>if</code> is just
+          how you write the decision down.
+        </p>
+        <p>
+          In C# the same idea looks like this. You do not need to run it to
+          understand the lesson; it is the table above written as a decision.
+        </p>
+        <pre><code>// Input: orderTotal
+// Step: compare orderTotal to 50
+// Decision: is it 50 or more?
+if (orderTotal >= 50)
+{
+    // Output
+    Console.WriteLine("Free shipping");
+}
+else
+{
+    // Output
+    Console.WriteLine("Charge shipping");
+}</code></pre>
+
+        <h3 id="mistake">A common mistake: jumping to code first</h3>
+        <p>
+          Beginners often open an editor and start typing <code>if</code>
+          before they can say what the program is looking at, or what question
+          it is answering. That feels like progress. It usually is not.
+        </p>
+        <ul>
+          <li>If you cannot name the <strong>input</strong>, you do not know what to ask the user — or what to read from a file or a form.</li>
+          <li>If you cannot name the <strong>decision</strong>, you will invent extra branches, or miss the one that matters.</li>
+          <li>If you change the shop’s rule later (free shipping at $75, not $50), you should change a named fact, not hunt through leftover guesses in the code.</li>
+        </ul>
+        <p>
+          Write the inputs and the decision in a sentence first. Then write the
+          code that matches the sentence. The sentence is the program. The code
+          is the recording of it.
+        </p>
+
+        <h3 id="try-this">Try this</h3>
+        <div class="try-this">
+          <p class="try-this-kicker">Your turn — complete the activity</p>
+          <p class="try-this-lead">
+            Demonstrate the principle. Name the <strong>inputs</strong>,
+            <strong>steps</strong>, and <strong>decisions</strong> for a new
+            problem — before you write any code. Do the work in the companion
+            GitHub project so you finish with something you can show.
+          </p>
+          <p class="try-this-actions">
+            <a class="btn try-this-btn" href="https://github.com/EmsCode82/csd-lab-02-how-programs-think" target="_blank" rel="noopener noreferrer">Open the companion GitHub project</a>
+          </p>
+          <p>
+            Fork the repo (or clone it and work in your own copy). Follow the
+            README there. Put your completed notes in that project — a short
+            file that names the parts is enough. That artifact is the point of
+            this lesson.
+          </p>
+          <ol>
+            <li>State the problem in one sentence. Use the shipping problem in the companion repo: <strong>Does this order ship free, or do we charge $5?</strong> (free if the order total is $50 or more.)</li>
+            <li>List the inputs, the steps, the yes-or-no decision, and the outputs. No code yet.</li>
+            <li>Walk two sample cases (one yes, one no), the same way the free-shipping table does above.</li>
+          </ol>
+          <p class="muted">
+            Hint: if you catch yourself writing <code>if</code> before the
+            decision is a plain-language question, stop and name the question
+            first.
+          </p>
+        </div>
+
+        <h3 id="check">Check yourself</h3>
+        <p>Answer these before you open the notes below.</p>
+        <ol>
+          <li>What are the three parts of a useful program? What is often a fourth?</li>
+          <li>In the free-shipping example, what is the input? What is the decision?</li>
+          <li>Why is opening the editor and writing <code>if</code> first a mistake?</li>
+          <li>The shop changes the rule to free shipping at $75. What do you rename or change first — a line of syntax, or a named fact?</li>
+        </ol>
+
+        <div class="edu-block">
+          <details>
+            <summary>Short answers</summary>
+            <ol>
+              <li>Inputs, steps, and decisions. Outputs are often the fourth — what you hand back after the decision.</li>
+              <li>The input is the order total in dollars. The decision is “Is the total $50 or more?”</li>
+              <li>Because you have not named what the program needs or what question it answers. The <code>if</code> is only how you write a decision you already understand.</li>
+              <li>Change the named fact first: the threshold is now 75, and the decision is “Is the total $75 or more?” Then update the code to match that sentence.</li>
+            </ol>
+          </details>
+        </div>
+
+        <p>
+          If you have not yet put named inputs, steps, and decisions in the
+          <a href="https://github.com/EmsCode82/csd-lab-02-how-programs-think" target="_blank" rel="noopener noreferrer">companion project</a>,
+          go back to <a href="#try-this">Try this</a> and finish that before you
+          leave the lesson.
+        </p>
+
+        <p>
+          <a href="../lab.html">← Lab home</a>
+          <span class="sep">·</span>
+          <a href="01-relational-tables.html">Lesson 1</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Open to Jr Software Developer roles — <a href="../about.html#contact">Contact</a></p>
+    <p>© 2026 Eric Shepard</p>
+  </footer>
+</body>
+</html>

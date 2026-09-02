@@ -477,6 +477,9 @@ footer{
 .card .lesson-meta{
   margin:.15rem 0 .75rem;
 }
+.panel > .card + .card{
+  margin-top:16px;
+}
 .lesson h3{
   margin-top:1.5rem;
 }
